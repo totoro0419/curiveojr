@@ -42,6 +42,9 @@ export default function HierarchyPage({subjectId,nodeId,learning}:{subjectId?:st
   <header className="page-heading with-icon"><span className="subject-icon large" data-shared-icon={subject.id}><Icon size={32}/></span><div><p className="eyebrow">{isRoot?'LEARN BY COURSE':subject.name}</p><h1>{node.title}</h1><p>{isRoot?'まず分野を選び、単元へ進んでください。授業は各講座の順序を維持します。':node.description}</p></div></header>
   <ProgressBar list={list} learning={learning}/>
   <p className="duration-summary subject-duration-summary">{durationSummary(list,learning.records)}</p>
+  {isRoot&&node.subjectId==='japanese-history'&&<a className="course-start interactive-card" href="#/history"><span className="start-play"><BookOpen size={20}/></span><span><strong>歴史の授業を時代順に学ぶ</strong><small>全38講の基本授業 → 時代区分 → 各授業。演習や告知は混ざりません。</small></span><ChevronRight size={20}/></a>}
+  {isRoot&&node.subjectId==='mathematics'&&<a className="course-start interactive-card" href="#/course/yt-PLdOJns3YfInOjm2LpyArpTSxA58btCpdH"><span className="start-play"><BookOpen size={20}/></span><span><strong>算数を最初から順に学ぶ</strong><small>けいたく「1から学ぶ中学受験算数」</small></span><ChevronRight size={20}/></a>}
+  {isRoot&&node.subjectId==='japanese'&&<a className="course-start interactive-card" href="#/course/yt-PLNDyK9mQcvDer-qaCA4l9Q11QU3TCAbqb"><span className="start-play"><BookOpen size={20}/></span><span><strong>国語の基礎講座から学ぶ</strong><small>さくららの国語基礎講座</small></span><ChevronRight size={20}/></a>}
   {isRoot&&<CoverageOverview subjectId={node.subjectId}/>}
   <LearningRoutes subjectId={node.subjectId} videoIds={node.videoIds} learning={learning}/>
   {isRoot&&<SectionTabs panelId="subject-panel" label="教科の探し方" items={[{id:'topics',label:'分野・単元から探す'},{id:'courses',label:'チャンネル・講座'}]} value={mode} onChange={setMode}/>}
