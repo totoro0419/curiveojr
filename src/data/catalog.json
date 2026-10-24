@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-24",
+  "mathveoSourceCommit": "",
+  "subjects": [
+    {
+      "id": "mathematics",
+      "name": "算数",
+      "shortName": "算数",
+      "description": "特殊算・割合・速さ・図形を学ぶ",
+      "icon": "Sigma"
+    },
+    {
+      "id": "japanese",
+      "name": "国語",
+      "shortName": "国語",
+      "description": "読解・語彙・文法・ことわざを学ぶ",
+      "icon": "BookOpen"
+    },
+    {
+      "id": "chemistry",
+      "name": "理科",
+      "shortName": "理科",
+      "description": "生物・地学・物理・化学を学ぶ",
+      "icon": "FlaskConical"
+    },
+    {
+      "id": "japanese-history",
+      "name": "社会",
+      "shortName": "社会",
+      "description": "地理・歴史・公民を学ぶ",
+      "icon": "Landmark"
+    }
+  ],
+  "channels": [
+    {
+      "id": "keitaku",
+      "name": "けいたくチャンネル",
+      "url": "https://www.youtube.com/@keitaku_kyoiku",
+      "description": "1から学ぶ中学受験算数"
+    },
+    {
+      "id": "kobachan",
+      "name": "こばちゃん塾",
+      "url": "https://www.youtube.com/@katekyo-aspiration",
+      "description": "ゼロから始める中学受験理科"
+    },
+    {
+      "id": "quick",
+      "name": "クイックラーニング",
+      "url": "https://www.youtube.com/@yama-da",
+      "description": "中学受験理科・算数の単元別授業"
+    },
+    {
+      "id": "sakurara",
+      "name": "中学受験さくららチャンネル",
+      "url": "https://www.youtube.com/@sakurara",
+      "description": "国語の基礎講座、社会の歴史・地理など"
+    }
+  ],
+  "units": [
+    {
+      "id": "mathematics-1",
+      "subjectId": "mathematics",
+      "level": "中学受験",
+      "field": "特殊算",
+      "name": "消去算",
+      "order": 0,
+      "path": [
+        "特殊算"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    },
+    {
+      "id": "mathematics-2",
+      "subjectId": "mathematics",
+      "level": "中学受験",
+      "field": "図形",
+      "name": "立体図形",
+      "order": 1,
+      "path": [
+        "図形"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    },
+    {
+      "id": "mathematics-3",
+      "subjectId": "mathematics",
+      "level": "中学受験",
+      "field": "図形",
+      "name": "相似",
+      "order": 2,
+      "path": [
+        "図形"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    },
+    {
+      "id": "chemistry-4",
+      "subjectId": "chemistry",
+      "level": "中学受験",
+      "field": "生物",
+      "name": "植物",
+      "order": 3,
+      "path": [
+        "生物"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    },
+    {
+      "id": "chemistry-5",
+      "subjectId": "chemistry",
+      "level": "中学受験",
+      "field": "物理",
+      "name": "電流",
+      "order": 4,
+      "path": [
+        "物理"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    },
+    {
+      "id": "japanese-6",
+      "subjectId": "japanese",
+      "level": "中学受験",
+      "field": "言葉の知識",
+      "name": "ことわざ",
+      "order": 6,
+      "path": [
+        "言葉の知識"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    },
+    {
+      "id": "japanese-history-7",
+      "subjectId": "japanese-history",
+      "level": "中学受験",
+      "field": "歴史",
+      "name": "室町時代",
+      "order": 7,
+      "path": [
+        "歴史"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    },
+    {
+      "id": "japanese-history-8",
+      "subjectId": "japanese-history",
+      "level": "中学受験",
+      "field": "歴史",
+      "name": "安土桃山時代",
+      "order": 8,
+      "path": [
+        "歴史"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    },
+    {
+      "id": "japanese-history-9",
+      "subjectId": "japanese-history",
+      "level": "中学受験",
+      "field": "歴史",
+      "name": "江戸時代",
+      "order": 9,
+      "path": [
+        "歴史"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    },
+    {
+      "id": "japanese-history-10",
+      "subjectId": "japanese-history",
+      "level": "中学受験",
+      "field": "歴史",
+      "name": "明治時代",
+      "order": 10,
+      "path": [
+        "歴史"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公開動画タイトルに基づく初期分類"
+    }
+  ],
+  "series": [
+    {
+      "id": "keitaku-math",
+      "title": "1から学ぶ中学受験算数・公開授業セレクション",
+      "channelId": "keitaku",
+      "subjectId": "mathematics",
+      "level": "中学受験",
+      "sourceUrl": "https://www.youtube.com/@keitaku_kyoiku",
+      "videoIds": [
+        "zqyWhNG2nFE",
+        "hcAi-yySVOQ",
+        "hsOGYKpK1gc"
+      ],
+      "coverage": "公開動画の一部のみ収録。講座全体の網羅・動画内再生確認は未完了。"
+    },
+    {
+      "id": "kobachan-science",
+      "title": "ゼロから始める中学受験理科・公開授業",
+      "channelId": "kobachan",
+      "subjectId": "chemistry",
+      "level": "中学受験",
+      "sourceUrl": "https://www.youtube.com/@katekyo-aspiration",
+      "videoIds": [
+        "RHoc0nnda4Q"
+      ],
+      "coverage": "公開動画の一部のみ収録。講座全体の網羅・動画内再生確認は未完了。"
+    },
+    {
+      "id": "quick-science",
+      "title": "中学受験理科・重要単元の解説",
+      "channelId": "quick",
+      "subjectId": "chemistry",
+      "level": "中学受験",
+      "sourceUrl": "https://www.youtube.com/@yama-da",
+      "videoIds": [
+        "2MFWVU-kz4s",
+        "qaiIOCWAnCI"
+      ],
+      "coverage": "公開動画の一部のみ収録。講座全体の網羅・動画内再生確認は未完了。"
+    },
+    {
+      "id": "sakurara-japanese",
+      "title": "国語の知識・公開授業",
+      "channelId": "sakurara",
+      "subjectId": "japanese",
+      "level": "中学受験",
+      "sourceUrl": "https://www.youtube.com/@sakurara",
+      "videoIds": [
+        "bLlervaH6JE"
+      ],
+      "coverage": "公開動画の一部のみ収録。講座全体の網羅・動画内再生確認は未完了。"
+    },
+    {
+      "id": "sakurara-social",
+      "title": "中学受験社会・歴史の公開授業",
+      "channelId": "sakurara",
+      "subjectId": "japanese-history",
+      "level": "中学受験",
+      "sourceUrl": "https://www.youtube.com/@sakurara",
+      "videoIds": [
+        "p0cUiSdsImI",
+        "PlR6lH26yqU",
+        "JeJiofaDW2M",
+        "p_a1mjvQ4Ec"
+      ],
+      "coverage": "公開動画の一部のみ収録。講座全体の網羅・動画内再生確認は未完了。"
+    }
+  ],
+  "videos": [
+    {
+      "id": "zqyWhNG2nFE",
+      "title": "消去算①（第22回）",
+      "channelId": "keitaku",
+      "subjectId": "mathematics",
+      "level": "中学受験",
+      "unitIds": [
+        "mathematics-1"
+      ],
+      "seriesIds": [
+        "keitaku-math"
+      ],
+      "order": 1,
+      "role": "core",
+      "sourceUrl": "https://www.youtube.com/watch?v=zqyWhNG2nFE",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "hcAi-yySVOQ",
+      "title": "投影図（第43回）",
+      "channelId": "keitaku",
+      "subjectId": "mathematics",
+      "level": "中学受験",
+      "unitIds": [
+        "mathematics-2"
+      ],
+      "seriesIds": [
+        "keitaku-math"
+      ],
+      "order": 2,
+      "role": "reinforcement",
+      "sourceUrl": "https://www.youtube.com/watch?v=hcAi-yySVOQ",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "hsOGYKpK1gc",
+      "title": "相似①（第46回）",
+      "channelId": "keitaku",
+      "subjectId": "mathematics",
+      "level": "中学受験",
+      "unitIds": [
+        "mathematics-3"
+      ],
+      "seriesIds": [
+        "keitaku-math"
+      ],
+      "order": 3,
+      "role": "reinforcement",
+      "sourceUrl": "https://www.youtube.com/watch?v=hsOGYKpK1gc",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "RHoc0nnda4Q",
+      "title": "植物① 種子の分類と発芽条件",
+      "channelId": "kobachan",
+      "subjectId": "chemistry",
+      "level": "中学受験",
+      "unitIds": [
+        "chemistry-4"
+      ],
+      "seriesIds": [
+        "kobachan-science"
+      ],
+      "order": 4,
+      "role": "core",
+      "sourceUrl": "https://www.youtube.com/watch?v=RHoc0nnda4Q",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "2MFWVU-kz4s",
+      "title": "電流と発熱・例題2",
+      "channelId": "quick",
+      "subjectId": "chemistry",
+      "level": "中学受験",
+      "unitIds": [
+        "chemistry-5"
+      ],
+      "seriesIds": [
+        "quick-science"
+      ],
+      "order": 5,
+      "role": "reinforcement",
+      "sourceUrl": "https://www.youtube.com/watch?v=2MFWVU-kz4s",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "qaiIOCWAnCI",
+      "title": "電流によって生じる磁界・解説",
+      "channelId": "quick",
+      "subjectId": "chemistry",
+      "level": "中学受験",
+      "unitIds": [
+        "chemistry-5"
+      ],
+      "seriesIds": [
+        "quick-science"
+      ],
+      "order": 6,
+      "role": "core",
+      "sourceUrl": "https://www.youtube.com/watch?v=qaiIOCWAnCI",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "bLlervaH6JE",
+      "title": "国語知識・ことわざ①",
+      "channelId": "sakurara",
+      "subjectId": "japanese",
+      "level": "中学受験",
+      "unitIds": [
+        "japanese-6"
+      ],
+      "seriesIds": [
+        "sakurara-japanese"
+      ],
+      "order": 7,
+      "role": "core",
+      "sourceUrl": "https://www.youtube.com/watch?v=bLlervaH6JE",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "p0cUiSdsImI",
+      "title": "室町時代③・足利義満と南北朝",
+      "channelId": "sakurara",
+      "subjectId": "japanese-history",
+      "level": "中学受験",
+      "unitIds": [
+        "japanese-history-7"
+      ],
+      "seriesIds": [
+        "sakurara-social"
+      ],
+      "order": 8,
+      "role": "reinforcement",
+      "sourceUrl": "https://www.youtube.com/watch?v=p0cUiSdsImI",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "PlR6lH26yqU",
+      "title": "全国統一②・織田信長の政治",
+      "channelId": "sakurara",
+      "subjectId": "japanese-history",
+      "level": "中学受験",
+      "unitIds": [
+        "japanese-history-8"
+      ],
+      "seriesIds": [
+        "sakurara-social"
+      ],
+      "order": 9,
+      "role": "core",
+      "sourceUrl": "https://www.youtube.com/watch?v=PlR6lH26yqU",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "JeJiofaDW2M",
+      "title": "江戸時代・身分制度",
+      "channelId": "sakurara",
+      "subjectId": "japanese-history",
+      "level": "中学受験",
+      "unitIds": [
+        "japanese-history-9"
+      ],
+      "seriesIds": [
+        "sakurara-social"
+      ],
+      "order": 10,
+      "role": "reinforcement",
+      "sourceUrl": "https://www.youtube.com/watch?v=JeJiofaDW2M",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "p_a1mjvQ4Ec",
+      "title": "明治時代①〜④・治外法権撤廃まで",
+      "channelId": "sakurara",
+      "subjectId": "japanese-history",
+      "level": "中学受験",
+      "unitIds": [
+        "japanese-history-10"
+      ],
+      "seriesIds": [
+        "sakurara-social"
+      ],
+      "order": 11,
+      "role": "reinforcement",
+      "sourceUrl": "https://www.youtube.com/watch?v=p_a1mjvQ4Ec",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": null,
+      "classificationEvidence": "公開された動画タイトルと投稿チャンネルを確認。埋め込み再生と授業内容の精査は未確認。",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      }
+    }
+  ],
+  "routes": [],
+  "chapterIndex": [],
+  "gaps": [
+    {
+      "subjectId": "mathematics",
+      "reason": "けいたく・理数館・さんよび等の全講座の目次取得と網羅性検証が未完了"
+    },
+    {
+      "subjectId": "japanese",
+      "reason": "国語読解の連続講座、0時間目のジーニアスの収録が未完了"
+    },
+    {
+      "subjectId": "chemistry",
+      "reason": "こばちゃん塾・クイックラーニングの全単元と実験動画の収録が未完了"
+    },
+    {
+      "subjectId": "japanese-history",
+      "reason": "さくららの地理・歴史・公民の全単元を順次追加する必要あり"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "curiveojr",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && node scripts/validate-catalog.mjs && vite build && node scripts/build-sw.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:resume": "node scripts/test-resume-selection.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "catalog:validate": "node scripts/validate-catalog.mjs",
+    "audit:validate": "node scripts/validate-audit.mjs",
+    "audit:integrate": "node scripts/integrate-audit.mjs",
+    "durations:generate": "python3 scripts/collect-video-durations.py",
+    "durations:collect": "python3 scripts/collect-video-durations.py --network",
+    "durations:test": "python3 -m unittest discover -s scripts -p \"test_duration_collector.py\" && node scripts/test-video-durations.mjs",
+    "durations:audit": "python3 scripts/collect-video-durations.py && node scripts/test-video-durations.mjs --report",
+    "durations:complete": "python3 scripts/collect-video-durations.py --require-complete",
+    "test:jr": "node scripts/validate-catalog.mjs"
+  },
+  "dependencies": {
+    "firebase": "^12.4.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.2"
+  }
+}

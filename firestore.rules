@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId}/learning/{videoId} {
+      function own() { return request.auth != null && request.auth.uid == userId; }
+      function valid() {
+        let data = request.resource.data;
+        let record = data.record;
+        return videoId.matches('^[A-Za-z0-9_-]{11}$')
+          && data.keys().hasOnly(['record', 'revision', 'deviceSequences', 'committedAt'])
+          && data.revision is int && data.revision > 0
+          && data.deviceSequences is map
+          && data.committedAt == request.time
+          && record is map && record.videoId == videoId
+          && record.keys().hasOnly(['videoId', 'position', 'duration', 'watchedSeconds', 'playbackEnded', 'resumeDismissed', 'status', 'understanding', 'favorite', 'watchLater', 'review', 'note', 'noteVersions', 'lastViewedAt', 'updatedAt', 'deviceId', 'versions'])
+          && record.position is number && record.position >= 0
+          && record.duration is number && record.duration >= 0
+          && (!('watchedSeconds' in record) || (record.watchedSeconds is number && record.watchedSeconds >= 0))
+          && (!('resumeDismissed' in record) || record.resumeDismissed is bool)
+          && record.playbackEnded is bool
+          && record.status in ['unstarted', 'learning', 'completed']
+          && record.understanding in ['unset', 'understood', 'unsure', 'review']
+          && record.favorite is bool && record.watchLater is bool && record.review is bool
+          && record.note is string && record.note.size() <= 20000
+          && record.noteVersions is list
+          && record.lastViewedAt is number && record.updatedAt is number
+          && record.deviceId is string && record.versions is map;
+      }
+      allow read: if own();
+      allow create: if own() && valid() && request.resource.data.revision == 1;
+      allow update: if own() && valid() && request.resource.data.revision == resource.data.revision + 1;
+      allow delete: if false;
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

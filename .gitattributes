@@ -1,0 +1,2 @@
+# Preserve the supplied audit CSV bytes and hashes on every platform.
+data/audits/**/*.csv -text
