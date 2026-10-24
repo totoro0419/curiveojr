@@ -9,10 +9,11 @@ const VERSION=1;
 if(c.nonLessonCleanup?.version===VERSION){console.log('Non-lesson cleanup already applied');process.exit(0);}
 const rules=[
  ['channel-marketing',/チャンネル登録|メンバーシップ|会員登録|フォローのお願い|チャンネル(?:の|を)?紹介|登録者.{0,8}(?:突破|達成)/],
- ['sales-and-enrollment',/(?:テキスト|教材|書籍|新刊|問題集|参考書|電子書籍|本).{0,16}(?:販売|発売|増刷|購入|予約受付|申し込み|申込|買い方|買う)|(?:販売|発売|増刷|購入|予約受付|申込|申し込み).{0,16}(?:テキスト|教材|書籍|問題集|参考書|講座)/],
+ ['sales-and-enrollment',/(?:テキスト|教材|書籍|新刊|問題集|参考書|電子書籍).{0,22}(?:販売|発売|増刷|購入|予約受付|申し込み|申込|買い方)|(?:販売|発売|増刷|購入|予約受付|申込|申し込み).{0,16}(?:テキスト|教材|書籍|問題集|参考書|講座)|(?:発売開始|発売決定|販売開始|予約受付開始|出版記念)/],
  ['promotion-or-notice',/^(?:【(?:重要な)?お知らせ】|お知らせ[！!。:：\s]|ご報告[！!。:：\s]|【ご報告】|緊急動画【|【緊急告知】|【告知】|重大発表|【宣伝】)|(?:参加者募集|募集開始|申し込み受付|申込受付|出版記念|予約販売|セミナー開催|イベント告知|受講生募集|体験授業のご案内|講座のご案内|公式LINE登録|キャンペーンのお知らせ|ライブ配信のお知らせ|ライブ配信予告)/],
  ['non-lesson-channel-news',/^(?:動画(?:が|を|の)?(?:完成|撮影|公開|投稿)|テキスト(?:が|を)?(?:完成|販売|発売)|受験相談(?:会|募集)|[0-9０-９]+万人(?:達成|突破)|チャンネル開設|自己紹介(?:動画)?$|はじめまして[！!。])/],
- ['instructions-or-preview',/^(?:【?(?:サンプル動画|オリエンテーション|講座紹介|使い方のご案内|説明会|授業の受け方)】?|無料(?:体験|相談)のご案内)/]
+ ['instructions-or-preview',/^(?:【?(?:サンプル動画|オリエンテーション|講座紹介|使い方のご案内|説明会|授業の受け方)】?|無料(?:体験|相談)のご案内)/],
+ ['standalone-study-advice',/^(?:受験生必見[！!]?\s*)?(?:歴史のまとめ|社会のまとめ)?勉強法[！!。]|^(?:受験生必見[！!]?\s*)?歴史のまとめ勉強法/]
 ];
 const suspect=/(?:お知らせ|告知|宣伝|募集|販売|発売|購入|申込|申し込み|増刷|出版|サンプル動画|チャンネル登録|メンバーシップ|入会|ご報告|緊急動画|動画を撮影|講座の紹介|テキスト購入|活動報告)/;
 const removed=[],needsReview=[];
@@ -27,6 +28,7 @@ for(const v of c.videos){
   needsReview.push({videoId:v.id,title:v.originalTitle,reason:'表題だけでは宣伝か授業か確定できない'});
  }
 }
+if(deleted.has('RV1LoAXJyu8'))throw Error('False positive: arithmetic lesson 「3本多く買う」 was classified as marketing');
 const preservedIds=new Set(c.videos.filter(v=>!deleted.has(v.id)).map(v=>v.id));
 c.videos=c.videos.filter(v=>preservedIds.has(v.id));
 for(const s of c.series){
