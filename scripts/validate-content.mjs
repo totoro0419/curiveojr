@@ -44,7 +44,7 @@ for(const s of source.series){
  if(totals.missing===0)assert.equal(remainingPlaylistSeconds(direct,0,0),totals.seconds);
  else assert.equal(remainingPlaylistSeconds(direct,0,0),null);
 }
-for(const v of source.videos.filter(v=>v.subjectId==='mathematics'&&/倍数算/.test(v.title))){assert.ok(v.unitIds.some(id=>unitMap.get(id)?.field==='文章題'),`倍数算 classification: ${v.id}`);}
+for(const v of source.videos.filter(v=>v.subjectId==='mathematics'&&/倍数(?:変化)?算/.test(v.title))){assert.ok(v.unitIds.some(id=>unitMap.get(id)?.field==='文章題'),`倍数算 classification: ${v.id}`);}
 for(const row of source.coverage){assert.ok(row.videoIds.every(id=>videoMap.get(id)?.subjectId===row.subjectId));assert.equal(row.status,row.videoIds.length?'listed':'missing');}
 assert.ok(source.subjects.length===4);
 for(const subject of source.subjects){assert.ok(subject.channelOrder?.length);assert.ok(subject.channelOrder.every(id=>source.channels.some(ch=>ch.id===id)));}

@@ -384,25 +384,12 @@
       "evidence": "公式講座名・単元目次・動画タイトルに基づく分類: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
     },
     {
-      "id": "mathematics-b40ca96bfad4",
-      "subjectId": "mathematics",
-      "level": "中学受験",
-      "field": "数の性質",
-      "name": "倍数・約数",
-      "order": 19,
-      "path": [
-        "数の性質"
-      ],
-      "classificationStatus": "title-supported",
-      "evidence": "公式講座名・単元目次・動画タイトルに基づく分類: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
-    },
-    {
       "id": "mathematics-ba80a2d8a2be",
       "subjectId": "mathematics",
       "level": "中学受験",
       "field": "文章題",
       "name": "集合",
-      "order": 20,
+      "order": 19,
       "path": [
         "文章題"
       ],
@@ -415,7 +402,7 @@
       "level": "中学受験",
       "field": "数と計算",
       "name": "計算の工夫・逆算",
-      "order": 21,
+      "order": 20,
       "path": [
         "数と計算"
       ],
@@ -428,7 +415,7 @@
       "level": "中学受験",
       "field": "算数総合",
       "name": "算数文章題",
-      "order": 22,
+      "order": 21,
       "path": [
         "算数総合"
       ],
@@ -441,7 +428,7 @@
       "level": "中学受験",
       "field": "数の性質",
       "name": "余り・整数条件",
-      "order": 23,
+      "order": 22,
       "path": [
         "数の性質"
       ],
@@ -454,7 +441,7 @@
       "level": "中学受験",
       "field": "公民",
       "name": "日本国憲法・人権・義務",
-      "order": 24,
+      "order": 23,
       "path": [
         "公民"
       ],
@@ -467,7 +454,7 @@
       "level": "中学受験",
       "field": "社会総合",
       "name": "偏差値60超えの社会",
-      "order": 25,
+      "order": 24,
       "path": [
         "社会総合"
       ],
@@ -480,7 +467,7 @@
       "level": "中学受験",
       "field": "公民",
       "name": "財政・経済・社会保障",
-      "order": 26,
+      "order": 25,
       "path": [
         "公民"
       ],
@@ -493,7 +480,7 @@
       "level": "中学受験",
       "field": "公民",
       "name": "国会・内閣・裁判所",
-      "order": 27,
+      "order": 26,
       "path": [
         "公民"
       ],
@@ -506,7 +493,7 @@
       "level": "中学受験",
       "field": "歴史",
       "name": "旧石器・縄文・弥生",
-      "order": 28,
+      "order": 27,
       "path": [
         "歴史"
       ],
@@ -519,7 +506,7 @@
       "level": "中学受験",
       "field": "歴史",
       "name": "古墳・飛鳥",
-      "order": 29,
+      "order": 28,
       "path": [
         "歴史"
       ],
@@ -532,7 +519,7 @@
       "level": "中学受験",
       "field": "歴史",
       "name": "奈良・平安",
-      "order": 30,
+      "order": 29,
       "path": [
         "歴史"
       ],
@@ -545,7 +532,7 @@
       "level": "中学受験",
       "field": "歴史",
       "name": "鎌倉",
-      "order": 31,
+      "order": 30,
       "path": [
         "歴史"
       ],
@@ -558,7 +545,7 @@
       "level": "中学受験",
       "field": "歴史",
       "name": "室町・戦国",
-      "order": 32,
+      "order": 31,
       "path": [
         "歴史"
       ],
@@ -571,7 +558,7 @@
       "level": "中学受験",
       "field": "歴史",
       "name": "江戸",
-      "order": 33,
+      "order": 32,
       "path": [
         "歴史"
       ],
@@ -584,7 +571,7 @@
       "level": "中学受験",
       "field": "歴史",
       "name": "明治",
-      "order": 34,
+      "order": 33,
       "path": [
         "歴史"
       ],
@@ -597,7 +584,7 @@
       "level": "中学受験",
       "field": "歴史",
       "name": "文化史・外交史",
-      "order": 35,
+      "order": 34,
       "path": [
         "歴史"
       ],
@@ -610,7 +597,7 @@
       "level": "中学受験",
       "field": "物理",
       "name": "運動・振り子",
-      "order": 36,
+      "order": 35,
       "path": [
         "物理"
       ],
@@ -623,7 +610,7 @@
       "level": "中学受験",
       "field": "理科総合",
       "name": "偏差値60超えの理科",
-      "order": 37,
+      "order": 36,
       "path": [
         "理科総合"
       ],
@@ -636,7 +623,7 @@
       "level": "中学受験",
       "field": "物理",
       "name": "浮力・圧力",
-      "order": 38,
+      "order": 37,
       "path": [
         "物理"
       ],
@@ -649,7 +636,7 @@
       "level": "中学受験",
       "field": "物理",
       "name": "光",
-      "order": 39,
+      "order": 38,
       "path": [
         "物理"
       ],
@@ -662,7 +649,7 @@
       "level": "中学受験",
       "field": "地学",
       "name": "天気・気象",
-      "order": 40,
+      "order": 39,
       "path": [
         "地学"
       ],
@@ -675,7 +662,7 @@
       "level": "中学受験",
       "field": "物理",
       "name": "電流・豆電球",
-      "order": 41,
+      "order": 40,
       "path": [
         "物理"
       ],
@@ -688,7 +675,7 @@
       "level": "中学受験",
       "field": "物理",
       "name": "てこ・ばね",
-      "order": 42,
+      "order": 41,
       "path": [
         "物理"
       ],
@@ -701,7 +688,7 @@
       "level": "中学受験",
       "field": "化学",
       "name": "状態変化・熱",
-      "order": 43,
+      "order": 42,
       "path": [
         "化学"
       ],
@@ -714,7 +701,7 @@
       "level": "中学受験",
       "field": "物理",
       "name": "滑車・輪軸",
-      "order": 44,
+      "order": 43,
       "path": [
         "物理"
       ],
@@ -727,7 +714,7 @@
       "level": "中学受験",
       "field": "地学",
       "name": "星・星座・地球",
-      "order": 45,
+      "order": 44,
       "path": [
         "地学"
       ],
@@ -740,7 +727,7 @@
       "level": "中学受験",
       "field": "地学",
       "name": "月",
-      "order": 46,
+      "order": 45,
       "path": [
         "地学"
       ],
@@ -753,7 +740,7 @@
       "level": "中学受験",
       "field": "地学",
       "name": "太陽・影",
-      "order": 47,
+      "order": 46,
       "path": [
         "地学"
       ],
@@ -766,7 +753,7 @@
       "level": "中学受験",
       "field": "生物",
       "name": "人体",
-      "order": 48,
+      "order": 47,
       "path": [
         "生物"
       ],
@@ -779,7 +766,7 @@
       "level": "中学受験",
       "field": "化学",
       "name": "気体",
-      "order": 49,
+      "order": 48,
       "path": [
         "化学"
       ],
@@ -792,7 +779,7 @@
       "level": "中学受験",
       "field": "化学",
       "name": "水溶液・溶解度",
-      "order": 50,
+      "order": 49,
       "path": [
         "化学"
       ],
@@ -805,7 +792,7 @@
       "level": "中学受験",
       "field": "生物",
       "name": "植物",
-      "order": 51,
+      "order": 50,
       "path": [
         "生物"
       ],
@@ -818,7 +805,7 @@
       "level": "中学受験",
       "field": "地学",
       "name": "大地・流水・岩石",
-      "order": 52,
+      "order": 51,
       "path": [
         "地学"
       ],
@@ -831,7 +818,7 @@
       "level": "中学受験",
       "field": "読解",
       "name": "詩・短歌・俳句",
-      "order": 53,
+      "order": 52,
       "path": [
         "読解"
       ],
@@ -844,7 +831,7 @@
       "level": "中学受験",
       "field": "言葉の知識",
       "name": "ことわざ・故事成語",
-      "order": 54,
+      "order": 53,
       "path": [
         "言葉の知識"
       ],
@@ -857,7 +844,7 @@
       "level": "中学受験",
       "field": "算数総合",
       "name": "偏差値60超えの算数",
-      "order": 55,
+      "order": 54,
       "path": [
         "算数総合"
       ],
@@ -870,9 +857,22 @@
       "level": "中学受験",
       "field": "平面図形",
       "name": "相似・面積比",
-      "order": 56,
+      "order": 55,
       "path": [
         "平面図形"
+      ],
+      "classificationStatus": "title-supported",
+      "evidence": "公式講座名・単元目次・動画タイトルに基づく分類: https://www.youtube.com/playlist?list=PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
+    },
+    {
+      "id": "mathematics-b40ca96bfad4",
+      "subjectId": "mathematics",
+      "level": "中学受験",
+      "field": "数の性質",
+      "name": "倍数・約数",
+      "order": 56,
+      "path": [
+        "数の性質"
       ],
       "classificationStatus": "title-supported",
       "evidence": "公式講座名・単元目次・動画タイトルに基づく分類: https://www.youtube.com/playlist?list=PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
@@ -4566,22 +4566,22 @@
         {
           "videoId": "krMAQ2LOeUA",
           "sourceOrder": 98,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "j3VThWXRHV4",
           "sourceOrder": 99,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "yTxylA0Xn7Y",
           "sourceOrder": 100,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "TvT37ZYP4wE",
           "sourceOrder": 101,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "97DdrGJWdRs",
@@ -5236,52 +5236,52 @@
         {
           "videoId": "B1Q2Wv_HJeI",
           "sourceOrder": 232,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "VGTLrTU5UYg",
           "sourceOrder": 233,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "B9sYY8AEytk",
           "sourceOrder": 234,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "w-KmzSod03I",
           "sourceOrder": 235,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "V_OmHYkUcAY",
           "sourceOrder": 236,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "rIalbefLof0",
           "sourceOrder": 237,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "cOrja164Xm0",
           "sourceOrder": 238,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "uZ3DwAtr_gQ",
           "sourceOrder": 239,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "AeVJRGnB4Go",
           "sourceOrder": 240,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "tEz23zMOc10",
           "sourceOrder": 241,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "-r0Sg1HOREg",
@@ -5616,42 +5616,42 @@
         {
           "videoId": "Vz-hwwBXP4w",
           "sourceOrder": 308,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "FhqcVMUb1Bk",
           "sourceOrder": 309,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "Py_vce6WW0A",
           "sourceOrder": 310,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "dYiJ1hz6dgQ",
           "sourceOrder": 311,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "vqLZyJdAvZs",
           "sourceOrder": 312,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "fKlNPJeZG0Q",
           "sourceOrder": 313,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "PDk9SHbFTxQ",
           "sourceOrder": 314,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "yQgPZDQDhx8",
           "sourceOrder": 315,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "124dggP9Wic",
@@ -10444,7 +10444,7 @@
         {
           "videoId": "HpPXgvCcF4w",
           "sourceOrder": 27,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "hvwG13lGATc",
@@ -11519,7 +11519,7 @@
         {
           "videoId": "ti3PcjP6Wdg",
           "sourceOrder": 242,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "EjbU8p6F8S8",
@@ -11939,7 +11939,7 @@
         {
           "videoId": "sp6B92to2MQ",
           "sourceOrder": 326,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "DeirsO7rLeU",
@@ -12204,7 +12204,7 @@
         {
           "videoId": "1gEPc7C0C5s",
           "sourceOrder": 380,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "YEUXR_2LGoY",
@@ -12229,7 +12229,7 @@
         {
           "videoId": "tc-7qSjkpCY",
           "sourceOrder": 385,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "Xtlb5ca3VQo",
@@ -13114,12 +13114,12 @@
         {
           "videoId": "19CcdGS9NHo",
           "sourceOrder": 563,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "AyE_s_Xrkqw",
           "sourceOrder": 564,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "VnBYGgWzsWA",
@@ -15674,7 +15674,7 @@
         {
           "videoId": "tSafuYumnlI",
           "sourceOrder": 1077,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "7hQCQmYtGcw",
@@ -23939,12 +23939,12 @@
         {
           "videoId": "h719odwKT80",
           "sourceOrder": 81,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "A68GzP006EM",
           "sourceOrder": 82,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "jlr7xdKdeOc",
@@ -24289,7 +24289,7 @@
         {
           "videoId": "UfdTeP7YoMw",
           "sourceOrder": 151,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "TFKDSUARHQ8",
@@ -24299,7 +24299,7 @@
         {
           "videoId": "Ik3-RbsSYYc",
           "sourceOrder": 153,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "Z7TLSF5vnwk",
@@ -24309,7 +24309,7 @@
         {
           "videoId": "T4AxsZJXPoE",
           "sourceOrder": 155,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "WX6Or9g50kY",
@@ -24319,7 +24319,7 @@
         {
           "videoId": "pbyfxTI3QB8",
           "sourceOrder": 157,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "bt3cfOAUSe0",
@@ -24364,7 +24364,7 @@
         {
           "videoId": "-0we0eEYIck",
           "sourceOrder": 166,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "0_bAetzl2dM",
@@ -24599,17 +24599,17 @@
         {
           "videoId": "CnvXw2HnLoQ",
           "sourceOrder": 213,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "GV1zkHg0rnA",
           "sourceOrder": 214,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "Ps7sAgD7eF4",
           "sourceOrder": 215,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "Ho5Rl2kuAMQ",
@@ -41538,27 +41538,27 @@
         {
           "videoId": "ahnwuxe20-Y",
           "sourceOrder": 72,
-          "unitId": "mathematics-bb7ed96a3d5f"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "Qq8es7IQSKo",
           "sourceOrder": 73,
-          "unitId": "mathematics-bb7ed96a3d5f"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "zYGPtTSol48",
           "sourceOrder": 74,
-          "unitId": "mathematics-bb7ed96a3d5f"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "3WJrcS1fDx8",
           "sourceOrder": 75,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "mMv16OIAZOw",
           "sourceOrder": 76,
-          "unitId": "mathematics-b40ca96bfad4"
+          "unitId": "mathematics-3f98a70841c4"
         },
         {
           "videoId": "ELsFumz25Qs",
@@ -55032,7 +55032,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -55068,7 +55068,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -55104,7 +55104,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -55140,7 +55140,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -59856,7 +59856,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -59892,7 +59892,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -59928,7 +59928,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -59964,7 +59964,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -60000,7 +60000,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -60036,7 +60036,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -60072,7 +60072,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -60108,7 +60108,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -60144,7 +60144,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -60180,7 +60180,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -62593,7 +62593,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -62629,7 +62629,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -62665,7 +62665,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -62701,7 +62701,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -62737,7 +62737,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -62773,7 +62773,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -62809,7 +62809,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -62845,7 +62845,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
@@ -84597,7 +84597,7 @@
       "subjectId": "mathematics",
       "level": "応用",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
@@ -92337,7 +92337,7 @@
       "subjectId": "mathematics",
       "level": "応用",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
@@ -95370,7 +95370,7 @@
       "subjectId": "mathematics",
       "level": "応用",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
@@ -97278,7 +97278,7 @@
       "subjectId": "mathematics",
       "level": "応用",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
@@ -97461,7 +97461,7 @@
       "subjectId": "mathematics",
       "level": "応用",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
@@ -103872,7 +103872,7 @@
       "subjectId": "mathematics",
       "level": "応用",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
@@ -103908,7 +103908,7 @@
       "subjectId": "mathematics",
       "level": "応用",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
@@ -122405,7 +122405,7 @@
       "subjectId": "mathematics",
       "level": "応用",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H"
@@ -168786,7 +168786,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -168822,7 +168822,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -171270,7 +171270,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -171342,7 +171342,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -171414,7 +171414,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -171486,7 +171486,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -171810,7 +171810,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -173502,7 +173502,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -173538,7 +173538,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -173574,7 +173574,7 @@
       "subjectId": "mathematics",
       "level": "中学受験（難易度未確認）",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLNDyK9mQcvDcfb5n3oRYCCpBkvnaPS8zR"
@@ -259887,7 +259887,7 @@
       "subjectId": "mathematics",
       "level": "基礎",
       "unitIds": [
-        "mathematics-bb7ed96a3d5f"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLdOJns3YfInOjm2LpyArpTSxA58btCpdH"
@@ -259923,7 +259923,7 @@
       "subjectId": "mathematics",
       "level": "基礎",
       "unitIds": [
-        "mathematics-bb7ed96a3d5f"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLdOJns3YfInOjm2LpyArpTSxA58btCpdH"
@@ -259959,7 +259959,7 @@
       "subjectId": "mathematics",
       "level": "基礎",
       "unitIds": [
-        "mathematics-bb7ed96a3d5f"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLdOJns3YfInOjm2LpyArpTSxA58btCpdH"
@@ -259995,7 +259995,7 @@
       "subjectId": "mathematics",
       "level": "基礎",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLdOJns3YfInOjm2LpyArpTSxA58btCpdH"
@@ -260031,7 +260031,7 @@
       "subjectId": "mathematics",
       "level": "基礎",
       "unitIds": [
-        "mathematics-b40ca96bfad4"
+        "mathematics-3f98a70841c4"
       ],
       "seriesIds": [
         "yt-PLdOJns3YfInOjm2LpyArpTSxA58btCpdH"
@@ -295752,45 +295752,16 @@
       "field": "数の性質",
       "topic": "倍数・約数・素数",
       "videoIds": [
-        "krMAQ2LOeUA",
-        "j3VThWXRHV4",
-        "yTxylA0Xn7Y",
-        "TvT37ZYP4wE",
-        "B1Q2Wv_HJeI",
-        "VGTLrTU5UYg",
-        "B9sYY8AEytk",
-        "w-KmzSod03I",
-        "V_OmHYkUcAY",
-        "rIalbefLof0",
-        "cOrja164Xm0",
-        "uZ3DwAtr_gQ",
-        "AeVJRGnB4Go",
-        "tEz23zMOc10",
-        "Vz-hwwBXP4w",
-        "FhqcVMUb1Bk",
-        "Py_vce6WW0A",
-        "dYiJ1hz6dgQ",
-        "vqLZyJdAvZs",
-        "fKlNPJeZG0Q",
-        "PDk9SHbFTxQ",
-        "yQgPZDQDhx8",
-        "HpPXgvCcF4w",
         "rKxGhJi9qY0",
         "aS6LDYIh04w",
-        "ti3PcjP6Wdg",
         "h0lVrPXRYQQ",
         "Sp_Ur44IUZI",
-        "sp6B92to2MQ",
-        "1gEPc7C0C5s",
-        "tc-7qSjkpCY",
         "txIuWLxzGMg",
         "-7HxtiQK4ic",
         "r2rhc9Mv5zY",
         "vpcNYJdHZxU",
         "XK5SNL6U00A",
         "eKvsH-ekMjE",
-        "19CcdGS9NHo",
-        "AyE_s_Xrkqw",
         "3sFdVHQbZvg",
         "KtakI8EqKgI",
         "Hdgw8gS-HAw",
@@ -295799,7 +295770,6 @@
         "8oGaU_NKz6g",
         "ioy1S5841B8",
         "ZqLGuAnDCzc",
-        "tSafuYumnlI",
         "oVTXw3ttAs0",
         "g_OVZsUeA5c",
         "mlB0fkBztO4",
@@ -295829,16 +295799,6 @@
         "zXUV9v84CX0",
         "09_rhykkwjE",
         "d83vsmrg3z8",
-        "h719odwKT80",
-        "A68GzP006EM",
-        "UfdTeP7YoMw",
-        "Ik3-RbsSYYc",
-        "T4AxsZJXPoE",
-        "pbyfxTI3QB8",
-        "-0we0eEYIck",
-        "CnvXw2HnLoQ",
-        "GV1zkHg0rnA",
-        "Ps7sAgD7eF4",
         "QsIzuR_8H3o",
         "yFLLeX07mro",
         "Dgmf5h_y-Ps",
@@ -295914,8 +295874,6 @@
         "VYCSR0zSBfE",
         "QXs84S_uO50",
         "EmUf-GX5AIE",
-        "3WJrcS1fDx8",
-        "mMv16OIAZOw",
         "2owDv25-DXM",
         "PVoMKyxQ17k",
         "YYiBc1Z3sZ4",
@@ -296522,6 +296480,10 @@
         "jZzqmbBzuxo",
         "ZJy8KAfNhcA",
         "laQGvP1QiGE",
+        "krMAQ2LOeUA",
+        "j3VThWXRHV4",
+        "yTxylA0Xn7Y",
+        "TvT37ZYP4wE",
         "Qd_Z3yAC7x0",
         "2CQBgI5OPT0",
         "_Vp5jQCaals",
@@ -296532,6 +296494,16 @@
         "l0he7Ogsd0w",
         "uoVnEJdwCGY",
         "5HIE23KsM8U",
+        "B1Q2Wv_HJeI",
+        "VGTLrTU5UYg",
+        "B9sYY8AEytk",
+        "w-KmzSod03I",
+        "V_OmHYkUcAY",
+        "rIalbefLof0",
+        "cOrja164Xm0",
+        "uZ3DwAtr_gQ",
+        "AeVJRGnB4Go",
+        "tEz23zMOc10",
         "neGhfwZAI-I",
         "rtbCJh2KP-M",
         "o9f-nLN29as",
@@ -296539,19 +296511,47 @@
         "VhG__e7I6Tc",
         "c2F5OAjmKVo",
         "y_HkspPNZS0",
+        "Vz-hwwBXP4w",
+        "FhqcVMUb1Bk",
+        "Py_vce6WW0A",
+        "dYiJ1hz6dgQ",
+        "vqLZyJdAvZs",
+        "fKlNPJeZG0Q",
+        "PDk9SHbFTxQ",
+        "yQgPZDQDhx8",
+        "HpPXgvCcF4w",
+        "ti3PcjP6Wdg",
+        "sp6B92to2MQ",
+        "1gEPc7C0C5s",
+        "tc-7qSjkpCY",
         "KGNqDHWFCKM",
         "IsA5P0ThPIk",
         "SWdT29rQmAs",
+        "19CcdGS9NHo",
+        "AyE_s_Xrkqw",
         "0kRGYr35yPU",
         "_Qkc8BLcxmg",
         "SHwPbrKp_2U",
         "pEnWtYILHkc",
+        "tSafuYumnlI",
+        "h719odwKT80",
+        "A68GzP006EM",
         "jlr7xdKdeOc",
         "AeEIZ5HuzQo",
+        "UfdTeP7YoMw",
+        "Ik3-RbsSYYc",
+        "T4AxsZJXPoE",
+        "pbyfxTI3QB8",
+        "-0we0eEYIck",
+        "CnvXw2HnLoQ",
+        "GV1zkHg0rnA",
+        "Ps7sAgD7eF4",
         "lXp3VQyK_lc",
         "ahnwuxe20-Y",
         "Qq8es7IQSKo",
         "zYGPtTSol48",
+        "3WJrcS1fDx8",
+        "mMv16OIAZOw",
         "18scxzzeGSo",
         "qy4l_KErhLQ",
         "8M1NL94Zj80",

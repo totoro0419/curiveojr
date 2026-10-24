@@ -3,27 +3,51 @@ npm warn Unknown env config "http-proxy". This will stop working in the next maj
 > curiveojr@1.0.0 test:content
 > node scripts/validate-content.mjs && node scripts/test-watch-context.mjs && node scripts/test-watch-layout.mjs && node scripts/test-watch-playlist-duration.mjs && node scripts/test-resume-selection.mjs && node scripts/test-playlist-readable-rows.mjs && node scripts/test-app-notifications.mjs
 
-node:internal/modules/run_main:107
-    triggerUncaughtException(
-    ^
-
-AssertionError [ERR_ASSERTION]: 倍数算 classification: 3WJrcS1fDx8
-    at file:///workspace/scratch/7397145b2d0a/curiveojr/scripts/validate-content.mjs:47:98 {
-  generatedMessage: false,
-  code: 'ERR_ASSERTION',
-  actual: false,
-  expected: true,
-  operator: '==',
-  diff: 'simple'
+{
+  "status": "PASS",
+  "uniqueVideos": 6849,
+  "courses": 98,
+  "sourceOrderAndRuntimeChecks": 98,
+  "durationKnown": 6849,
+  "durationMissing": 0,
+  "coverageRows": 103,
+  "coverageWithoutEvidence": [
+    "説明文・論説文"
+  ]
 }
+Source-scoped playback lists, remaining time and link propagation: PASS
+Watch playlist clipping controls and in-row Next Lesson routing: PASS
+Watch playlist page and visible-duration regression: PASS
+PASS Recent seek-only skim does not displace meaningful study
+PASS Missing watchedSeconds in old records uses conservative position fallback
+PASS Tiny legacy visit is not promoted
+PASS Fresh seek to 80 percent without watch does not count
+PASS Explicit suppression beats recent engagement
+PASS Completed latest lecture opens next in same course
+PASS Skip already completed and dismissed follow-on lessons
+PASS Near end of lecture uses next lesson rather than repeat final seconds
+PASS No fabricated continuation beyond last lesson
+PASS Unrelated courses are never considered a continuation
+PASS Unstarted saved bookmarks are not auto-recommended
+PASS When the newest episode is excluded, use next eligible one
+12 resume-selection checks passed.
+Playlist labels and thumbnails: PASS (6849 videos)
+PASS No false notice for healthy state
+PASS Cloud access denied is routed to settings
+PASS Sync status alone still signals an error
+PASS Cloud error and failing status do not duplicate
+PASS PWA errors are notification data
+PASS Available app update is notification data
+PASS Offline status is notification data
+PASS All independent states are represented once
+Settings-notifications regression checks passed.
 
-Node.js v24.22.1
 npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
 
 > curiveojr@1.0.0 build
 > node scripts/build-catalog-runtime.mjs && tsc --noEmit && node scripts/validate-catalog.mjs && vite build && node scripts/build-sw.mjs
 
-Runtime catalog: 1398722 bytes; source evidence retained in catalog.json
+Runtime catalog: 1398728 bytes; source evidence retained in catalog.json
 Catalog validated: 6849 unique videos / 98 series / 228 units
 vite v7.3.7 building client environment for production...
 transforming...
@@ -32,12 +56,12 @@ rendering chunks...
 computing gzip size...
 dist/index.html                            0.92 kB │ gzip:   0.60 kB
 dist/assets/index--R6bplp0.css            44.62 kB │ gzip:   9.65 kB
-dist/assets/HierarchyPage-Cr0ooCar.js     15.16 kB │ gzip:   5.04 kB
-dist/assets/index-Mj5Bm8ys.js          2,264.53 kB │ gzip: 664.22 kB
+dist/assets/HierarchyPage-btxsp85k.js     15.16 kB │ gzip:   5.04 kB
+dist/assets/index-DKVwWfh-.js          2,264.53 kB │ gzip: 664.20 kB
 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 3.18s
-Service worker: 14 local assets, 300c7a9d3ff0
+✓ built in 3.14s
+Service worker: 14 local assets, 9f8e28bc4f24

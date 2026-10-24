@@ -72,6 +72,7 @@ RULES={
 }
 def classify(subject,title,fallback,unit=None):
  t=norm(title)
+ if subject=='mathematics' and re.search(r'倍数(?:変化)?算',t):return '文章題','年齢算・倍数算'
  if subject=='chemistry' and re.search(r'電流と発熱|電熱線',t):return '物理','電熱線・発熱'
  if subject=='chemistry' and re.search(r'磁界|電磁石',t):return '物理','磁石・電磁石'
  for f,u,pat in RULES[subject]:
