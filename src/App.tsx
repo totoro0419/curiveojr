@@ -896,7 +896,7 @@ export function App() {
       </a>
       <aside className="sidebar">
         <a className="brand" href="#/" aria-label="Curiveo">
-          <img className="brand-symbol" src={`${import.meta.env.BASE_URL}brand/symbol.svg`} alt="" /><img className="brand-wordmark" src={`${import.meta.env.BASE_URL}brand/wordmark.svg`} alt="Curiveo Jr." />
+          <img className="brand-symbol" src={`${import.meta.env.BASE_URL}icon-192.png`} alt="" /><img className="brand-wordmark" src={`${import.meta.env.BASE_URL}brand/wordmark.svg`} alt="Curiveo Jr." />
         </a>
         <nav className="main-nav" aria-label="メインナビゲーション">
           {navItems.map((n) => (
@@ -927,7 +927,7 @@ export function App() {
       <div className="app-content">
         <header className="topbar">
           <a className="mobile-brand brand" href="#/">
-            <img className="brand-symbol" src={`${import.meta.env.BASE_URL}brand/symbol.svg`} alt="" /><img className="brand-wordmark" src={`${import.meta.env.BASE_URL}brand/wordmark.svg`} alt="Curiveo Jr." />
+            <img className="brand-symbol" src={`${import.meta.env.BASE_URL}icon-192.png`} alt="" /><img className="brand-wordmark" src={`${import.meta.env.BASE_URL}brand/wordmark.svg`} alt="Curiveo Jr." />
           </a>
           <span className="desktop-kicker">学びを、つなぐ。</span>
           <div className="topbar-actions">
