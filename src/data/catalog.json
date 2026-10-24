@@ -4060,7 +4060,6 @@
         "BHzHZTGu1Ms",
         "lGl7BeEI-8A",
         "rsN83mzePjg",
-        "RV1LoAXJyu8",
         "RIh5u9hjb3g",
         "65XHtvQTqpE",
         "pGBTl_YbsA4",
@@ -5569,11 +5568,6 @@
           "unitId": "mathematics-5b0f8732fd79"
         },
         {
-          "videoId": "RV1LoAXJyu8",
-          "sourceOrder": 299,
-          "unitId": "mathematics-5b0f8732fd79"
-        },
-        {
           "videoId": "RIh5u9hjb3g",
           "sourceOrder": 300,
           "unitId": "mathematics-5b0f8732fd79"
@@ -5703,7 +5697,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。",
       "listingComplete": true,
       "sourceCount": 325,
-      "excludedCount": 3,
+      "excludedCount": 4,
       "duplicateCount": 0
     },
     {
@@ -15854,7 +15848,6 @@
       "sourceKind": "playlist",
       "orderBasis": "official-playlist",
       "videoIds": [
-        "oqIxA19scoI",
         "rJbMtvDaLcE",
         "kq6v7KOlszQ",
         "W_rP-aZDT0k",
@@ -15918,11 +15911,6 @@
         "zDZuus66vmA"
       ],
       "lessons": [
-        {
-          "videoId": "oqIxA19scoI",
-          "sourceOrder": 1,
-          "unitId": "japanese-history-e399cf31dbb7"
-        },
         {
           "videoId": "rJbMtvDaLcE",
           "sourceOrder": 2,
@@ -16233,7 +16221,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。 地理統計・公民制度・時事の最新情報との照合は未完了です。",
       "listingComplete": true,
       "sourceCount": 63,
-      "excludedCount": 1,
+      "excludedCount": 2,
       "duplicateCount": 0
     },
     {
@@ -28482,7 +28470,6 @@
         "_npX4MKI8v8",
         "kU2Bv9_x_DU",
         "nyBes06N9Iw",
-        "VRS9Nr7j6Zs",
         "AR6nlnTTnBc",
         "qfrEXqhJ9QM",
         "46fCslApmEc",
@@ -28653,11 +28640,6 @@
           "videoId": "nyBes06N9Iw",
           "sourceOrder": 17,
           "unitId": "japanese-history-9be43035aedd"
-        },
-        {
-          "videoId": "VRS9Nr7j6Zs",
-          "sourceOrder": 18,
-          "unitId": "japanese-history-16e47647ea93"
         },
         {
           "videoId": "AR6nlnTTnBc",
@@ -29109,7 +29091,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。 地理統計・公民制度・時事の最新情報との照合は未完了です。",
       "listingComplete": true,
       "sourceCount": 109,
-      "excludedCount": 3,
+      "excludedCount": 4,
       "duplicateCount": 0
     },
     {
@@ -29136,7 +29118,6 @@
         "mOyDlzjhiXM",
         "ZMxrrUTfBzM",
         "uE1PGMrx2E4",
-        "VRS9Nr7j6Zs",
         "46fCslApmEc",
         "PbkGwZf0SvI",
         "5ZiM5oy6IDI",
@@ -29273,11 +29254,6 @@
           "videoId": "uE1PGMrx2E4",
           "sourceOrder": 15,
           "unitId": "japanese-history-69ca339b80ea"
-        },
-        {
-          "videoId": "VRS9Nr7j6Zs",
-          "sourceOrder": 16,
-          "unitId": "japanese-history-c64240620ecb"
         },
         {
           "videoId": "46fCslApmEc",
@@ -29609,7 +29585,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。 地理統計・公民制度・時事の最新情報との照合は未完了です。",
       "listingComplete": true,
       "sourceCount": 82,
-      "excludedCount": 2,
+      "excludedCount": 3,
       "duplicateCount": 0
     },
     {
@@ -33158,7 +33134,6 @@
         "HBNEBrR7KHs",
         "IwT89smJ81E",
         "HX9JPZHPJpw",
-        "VRS9Nr7j6Zs",
         "46fCslApmEc",
         "A2WGZgpmlnU",
         "Rh1_aow4G9Y",
@@ -33247,11 +33222,6 @@
           "videoId": "HX9JPZHPJpw",
           "sourceOrder": 11,
           "unitId": "japanese-history-24f38022183f"
-        },
-        {
-          "videoId": "VRS9Nr7j6Zs",
-          "sourceOrder": 12,
-          "unitId": "japanese-history-706918bcbd08"
         },
         {
           "videoId": "46fCslApmEc",
@@ -33443,7 +33413,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。 地理統計・公民制度・時事の最新情報との照合は未完了です。",
       "listingComplete": true,
       "sourceCount": 49,
-      "excludedCount": 1,
+      "excludedCount": 2,
       "duplicateCount": 0
     },
     {
@@ -62245,42 +62215,6 @@
       "curriculum": "unverified",
       "durationSeconds": 168,
       "thumbnailUrl": "https://i.ytimg.com/vi/rsN83mzePjg/mqdefault.jpg",
-      "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG",
-      "availability": {
-        "publicMetadata": "confirmed",
-        "embedMetadata": "unverified",
-        "playback": "unverified",
-        "checkedAt": "2026-10-24"
-      },
-      "qualityReview": "unverified",
-      "durationEvidence": {
-        "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG",
-        "method": "youtube-public-playlist",
-        "checkedAt": "2026-10-24"
-      }
-    },
-    {
-      "id": "RV1LoAXJyu8",
-      "title": "文章題•差集め算④3本多く買う",
-      "originalTitle": "【中学受験】算数文章題•差集め算④3本多く買う",
-      "channelId": "sakurara",
-      "youtubeChannelId": "UCFOADXtB3WbWlHSasEJIeJA",
-      "uploaderName": "中学受験さくららチャンネル",
-      "subjectId": "mathematics",
-      "level": "中学受験（難易度未確認）",
-      "unitIds": [
-        "mathematics-5b0f8732fd79"
-      ],
-      "seriesIds": [
-        "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
-      ],
-      "order": 399,
-      "role": "core",
-      "sourceUrl": "https://www.youtube.com/watch?v=RV1LoAXJyu8",
-      "verification": "verified",
-      "curriculum": "unverified",
-      "durationSeconds": 168,
-      "thumbnailUrl": "https://i.ytimg.com/vi/RV1LoAXJyu8/mqdefault.jpg",
       "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG",
       "availability": {
         "publicMetadata": "confirmed",
@@ -123579,42 +123513,6 @@
       "qualityReview": "unverified",
       "durationEvidence": {
         "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDeU2qD6ja0COqfswdAfQA-H",
-        "method": "youtube-public-playlist",
-        "checkedAt": "2026-10-24"
-      }
-    },
-    {
-      "id": "oqIxA19scoI",
-      "title": "悲願の社会テキスト第一弾。【社会地理】購入できます。",
-      "originalTitle": "悲願の社会テキスト第一弾。【社会地理】購入できます。",
-      "channelId": "sakurara",
-      "youtubeChannelId": "UCFOADXtB3WbWlHSasEJIeJA",
-      "uploaderName": "中学受験さくららチャンネル",
-      "subjectId": "japanese-history",
-      "level": "中学受験（難易度未確認）",
-      "unitIds": [
-        "japanese-history-e399cf31dbb7"
-      ],
-      "seriesIds": [
-        "yt-PLNDyK9mQcvDfjIP-qh8JZP14mgE_-CMYQ"
-      ],
-      "order": 2098,
-      "role": "core",
-      "sourceUrl": "https://www.youtube.com/watch?v=oqIxA19scoI",
-      "verification": "verified",
-      "curriculum": "unverified",
-      "durationSeconds": 237,
-      "thumbnailUrl": "https://i.ytimg.com/vi/oqIxA19scoI/mqdefault.jpg",
-      "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfjIP-qh8JZP14mgE_-CMYQ",
-      "availability": {
-        "publicMetadata": "confirmed",
-        "embedMetadata": "unverified",
-        "playback": "unverified",
-        "checkedAt": "2026-10-24"
-      },
-      "qualityReview": "unverified",
-      "durationEvidence": {
-        "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDfjIP-qh8JZP14mgE_-CMYQ",
         "method": "youtube-public-playlist",
         "checkedAt": "2026-10-24"
       }
@@ -191601,46 +191499,6 @@
       "qualityReview": "unverified",
       "durationEvidence": {
         "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDevgH55AXoGQAWLmNqTJotC",
-        "method": "youtube-public-playlist",
-        "checkedAt": "2026-10-24"
-      }
-    },
-    {
-      "id": "VRS9Nr7j6Zs",
-      "title": "緊急動画【社会歴史】書き上げました。",
-      "originalTitle": "緊急動画【社会歴史】書き上げました。",
-      "channelId": "sakurara",
-      "youtubeChannelId": "UCFOADXtB3WbWlHSasEJIeJA",
-      "uploaderName": "中学受験さくららチャンネル",
-      "subjectId": "japanese-history",
-      "level": "中学受験（難易度未確認）",
-      "unitIds": [
-        "japanese-history-16e47647ea93",
-        "japanese-history-c64240620ecb",
-        "japanese-history-706918bcbd08"
-      ],
-      "seriesIds": [
-        "yt-PLNDyK9mQcvDfCo2cII4MlFt3H0mjf10FM",
-        "yt-PLNDyK9mQcvDevgH55AXoGQAWLmNqTJotC",
-        "yt-PLNDyK9mQcvDeSsvaFwKCG94EOGz2jazwh"
-      ],
-      "order": 3986,
-      "role": "core",
-      "sourceUrl": "https://www.youtube.com/watch?v=VRS9Nr7j6Zs",
-      "verification": "verified",
-      "curriculum": "unverified",
-      "durationSeconds": 382,
-      "thumbnailUrl": "https://i.ytimg.com/vi/VRS9Nr7j6Zs/mqdefault.jpg",
-      "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfCo2cII4MlFt3H0mjf10FM",
-      "availability": {
-        "publicMetadata": "confirmed",
-        "embedMetadata": "unverified",
-        "playback": "unverified",
-        "checkedAt": "2026-10-24"
-      },
-      "qualityReview": "unverified",
-      "durationEvidence": {
-        "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDeSsvaFwKCG94EOGz2jazwh",
         "method": "youtube-public-playlist",
         "checkedAt": "2026-10-24"
       }
@@ -296387,7 +296245,6 @@
         "BHzHZTGu1Ms",
         "lGl7BeEI-8A",
         "rsN83mzePjg",
-        "RV1LoAXJyu8",
         "RIh5u9hjb3g",
         "65XHtvQTqpE",
         "pGBTl_YbsA4",
@@ -301910,7 +301767,6 @@
       "field": "地理",
       "topic": "日本の国土・地形",
       "videoIds": [
-        "oqIxA19scoI",
         "rJbMtvDaLcE",
         "tG5GkCYbAXs",
         "2oGcOf0BLlo",
@@ -302056,7 +301912,6 @@
       "topic": "古墳・飛鳥",
       "videoIds": [
         "lAxuuOkISug",
-        "VRS9Nr7j6Zs",
         "46fCslApmEc",
         "mUXFFbaqYsc",
         "MZ-N2rdIVok",
@@ -302080,7 +301935,6 @@
       "videoIds": [
         "P64u4m8XlP8",
         "oj1PkanUyPs",
-        "VRS9Nr7j6Zs",
         "46fCslApmEc",
         "MZ-N2rdIVok",
         "oDx7cHReNV0",
@@ -302584,5 +302438,11 @@
     },
     "polishVersion": 1,
     "furtherPolished": 226
+  },
+  "nonLessonCleanup": {
+    "version": 1,
+    "removedCount": 3,
+    "needsReviewCount": 5,
+    "rules": "strict-original-title"
   }
 }
