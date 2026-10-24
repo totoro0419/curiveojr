@@ -2,7 +2,7 @@ import { useEffect, useMemo } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, ChevronRight, ExternalLink, Play } from 'lucide-react';
 import { catalog, seriesInSubject, routeMap, routeSequence, channelMap, subjectMap, seriesMap, unitMap, videoMap, progress, videoHref, time } from '../catalog';
 import type { Series, SubjectId, Video } from '../types';
-import { hierarchyRoots, learningNodes, getNodePath, nodeVideos, nodeHref, recoveryHrefForMissingNode } from '../navigation/hierarchy';
+import { hierarchyRoots, learningNodes, getNodePath, nodeVideos, nodeHref, recoveryHrefForMissingNode, primarySeriesFor } from '../navigation/hierarchy';
 import { courseOutline } from '../navigation/course-outline';
 import { go, useViewState } from '../navigation/route';
 import { CourseList, ProgressBar, VideoList, icons } from '../components/catalog-ui';
@@ -21,9 +21,9 @@ export default function HierarchyPage({subjectId,nodeId,learning}:{subjectId?:st
  const recoveryHref=recoveryHrefForMissingNode(nodeId,subjectId);
  // Old installed PWA links may reference categories removed during catalog migration.
  // Recover into a working subject or discovery page instead of trapping the learner.
- useEffect(()=>{if(!node)go(recoveryHref.slice(1));},[node,recoveryHref]);
+ useEffect(()=>{if(!node)go(recoveryHref.slice(1));else if(node.id==='field-japanese-history:歴史')go('/history');},[node,recoveryHref]);
  const historySubject=node?.subjectId==='japanese-history'||node?.subjectId==='world-history';
- const [mode,setMode]=useViewState(historySubject?'history-subject-mode':'subject-mode',historySubject?'topics':'courses');
+ const [mode,setMode]=useViewState(historySubject?'history-subject-mode':'subject-mode','topics');
  const [source,setSource]=useViewState('topic-source','');
  const list=useMemo(()=>node?nodeVideos(node.id):[],[node]);
  if(!node)return <div className="empty"><h2>教材一覧を更新しました</h2><p>以前の分類リンクから、現在の教科・講座一覧へ移動します。</p><a className="button primary" href={recoveryHref}>最新の教材を探す</a></div>;
@@ -32,20 +32,26 @@ export default function HierarchyPage({subjectId,nodeId,learning}:{subjectId?:st
  const courses=sortCourses(catalog.series.filter(series=>seriesInSubject(series,node.subjectId)&&series.videoIds.some(id=>node.videoIds.includes(id))));
  const chosen=seriesMap.get(source);const selected=chosen&&courses.includes(chosen)?chosen:undefined;
  const children=node.children.map(id=>learningNodes.get(id)!).filter(Boolean);
+ const mainChildren=isRoot?children.filter(child=>!/(総合|環境)/.test(child.title)):children;
+ const extraChildren=isRoot?children.filter(child=>/(総合|環境)/.test(child.title)):[];
+ const recommended=!isRoot&&!children.length?primarySeriesFor(node):undefined;
+ const recommendedVideos=recommended?.videoIds.filter(id=>node.videoIds.includes(id)).flatMap(id=>videoMap.get(id)?[videoMap.get(id)!]:[])||[];
  return <>
   <Breadcrumb items={path.map((part,i)=>({title:part.title,href:i<path.length-1?nodeHref(part):undefined}))}/>
   <a className="back-link" href={node.parentId?nodeHref(learningNodes.get(node.parentId)!):'#/discover'}><ArrowLeft size={17}/>{node.parentId?'上の分類へ':'教科一覧'}</a>
-  <header className="page-heading with-icon"><span className="subject-icon large" data-shared-icon={subject.id}><Icon size={32}/></span><div><p className="eyebrow">{isRoot?'LEARN BY COURSE':subject.name}</p><h1>{node.title}</h1><p>{isRoot?'講座を選んで、ひとつの流れで学ぶ。':node.description}</p></div></header>
+  <header className="page-heading with-icon"><span className="subject-icon large" data-shared-icon={subject.id}><Icon size={32}/></span><div><p className="eyebrow">{isRoot?'LEARN BY COURSE':subject.name}</p><h1>{node.title}</h1><p>{isRoot?'まず分野を選び、単元へ進んでください。授業は各講座の順序を維持します。':node.description}</p></div></header>
   <ProgressBar list={list} learning={learning}/>
   <p className="duration-summary subject-duration-summary">{durationSummary(list,learning.records)}</p>
   {isRoot&&<CoverageOverview subjectId={node.subjectId}/>}
   <LearningRoutes subjectId={node.subjectId} videoIds={node.videoIds} learning={learning}/>
-  {isRoot&&<SectionTabs panelId="subject-panel" label="教科の探し方" items={historySubject?[{id:'topics',label:'単元から探す'},{id:'courses',label:'チャンネル・講座'}]:[{id:'courses',label:'チャンネル・講座'},{id:'topics',label:'単元から探す'}]} value={mode} onChange={setMode}/>}
+  {isRoot&&<SectionTabs panelId="subject-panel" label="教科の探し方" items={[{id:'topics',label:'分野・単元から探す'},{id:'courses',label:'チャンネル・講座'}]} value={mode} onChange={setMode}/>}
   <div id="subject-panel" role={isRoot?'tabpanel':undefined} aria-labelledby={isRoot?`subject-panel-${mode}`:undefined} aria-label={isRoot?(mode==='courses'?'チャンネル・講座':'単元から探す'):undefined} className="results-enter" key={isRoot?mode:node.id}>
   {isRoot&&mode==='courses'?<><p className="section-intro">チャンネルごとに講座を分けています。各講座の収録範囲・出典・構成を確認して進められます。</p><CourseGroups courses={courses} learning={learning} subjectId={node.subjectId}/></>:<>
-   {!!children.length&&<div className="hierarchy-grid">{children.map(child=>{const p=progress(nodeVideos(child.id),learning.records);return <a className="hierarchy-card interactive-card" key={child.id} href={nodeHref(child)}><span className="category-mark"><BookOpen size={20}/></span><div><h2>{child.title}</h2><p>{child.children.length?`${child.children.length}項目 · `:''}{child.videoIds.length}授業{p.completed?` · ${p.percent}% 学習済み`:''}</p><p className="group-duration">{durationSummary(nodeVideos(child.id),learning.records)}</p></div><ChevronRight size={18}/></a>;})}</div>}
+   {isRoot&&<p className="section-intro">① 学ぶ分野を選ぶ → ② 単元を選ぶ → ③ 授業を再生する。まずは下の分野を押してください。</p>}
+   {!!mainChildren.length&&<div className="hierarchy-grid">{mainChildren.map(child=>{const p=progress(nodeVideos(child.id),learning.records);return <a className="hierarchy-card interactive-card" key={child.id} href={nodeHref(child)}><span className="category-mark"><BookOpen size={20}/></span><div><h2>{child.title}</h2><p>{child.id==='field-japanese-history:歴史'?'全38講の授業動画を時代別に整理':`${child.children.length?child.children.length+'単元 · ':''}${child.videoIds.length}授業`}{p.completed?` · ${p.percent}% 学習済み`:''}</p></div><ChevronRight size={18}/></a>;})}</div>}
+   {!!extraChildren.length&&<Disclosure stateKey="supplementary-fields" title="発展・総合などの補助教材" count={extraChildren.length}><div className="hierarchy-grid">{extraChildren.map(child=><a className="hierarchy-card interactive-card" key={child.id} href={nodeHref(child)}><span className="category-mark"><BookOpen size={20}/></span><div><h2>{child.title}</h2><p>{child.videoIds.length}授業</p></div><ChevronRight size={18}/></a>)}</div></Disclosure>}
    {children.length?<Disclosure stateKey="skip-to-course" title="この範囲の講座を直接選ぶ" count={courses.length} meta={durationSummary(list,learning.records)}><CourseGroups courses={courses} learning={learning} subjectId={node.subjectId}/></Disclosure>:<section className="section"><h2>{children.length?'この範囲を学べる講座':'講座を選ぶ'}</h2><p className="section-intro">同じ単元でも講座は混ぜません。選んだ講座の収録順で表示します。</p>
-    {!selected?<div className="course-choices">{courses.map(course=><button key={course.id} className="course-choice" onClick={()=>setSource(course.id)}><BookOpen size={21}/><span><small>{channelMap.get(course.channelId)?.name}</small><strong>{course.title}</strong><small>この範囲に {course.videoIds.filter(id=>node.videoIds.includes(id)).length} 授業 · {durationSummary(course.videoIds.filter(id=>node.videoIds.includes(id)).map(id=>videoMap.get(id)!).filter(Boolean),learning.records)}</small></span><ChevronRight size={18}/></button>)}</div>:<><div className="selected-course"><div><p className="eyebrow">{channelMap.get(selected.channelId)?.name}</p><h3>{selected.title}</h3></div><button className="text-button" onClick={()=>setSource('')}>講座を選び直す</button></div><ResumeCourse series={selected} learning={learning} ids={node.videoIds} subjectId={node.subjectId} playlistScope={`node:${node.id}`}/><VideoList videos={selected.videoIds.filter(id=>node.videoIds.includes(id)).map(id=>videoMap.get(id)!)} learning={learning} seriesId={selected.id} subjectId={node.subjectId} contextLabel={node.title} playlistScope={`node:${node.id}`}/></>}
+    {!selected?<>{recommendedVideos.length>0&&<><h3>まずはこの授業から</h3><p className="section-intro">{channelMap.get(recommended!.channelId)?.name}の講座から、この単元の授業を表示しています。</p><VideoList videos={recommendedVideos} learning={learning} seriesId={recommended!.id} subjectId={node.subjectId} contextLabel={node.title}/></>}<Disclosure stateKey="choose-alternative-series" title={recommendedVideos.length?'別の講座・先生で学ぶ':'講座を選んで学ぶ'} count={courses.length} defaultOpen={!recommendedVideos.length}><div className="course-choices">{courses.map(course=><button key={course.id} className="course-choice" onClick={()=>setSource(course.id)}><BookOpen size={21}/><span><small>{channelMap.get(course.channelId)?.name}</small><strong>{course.title}</strong><small>この範囲に {course.videoIds.filter(id=>node.videoIds.includes(id)).length} 授業 · {durationSummary(course.videoIds.filter(id=>node.videoIds.includes(id)).map(id=>videoMap.get(id)!).filter(Boolean),learning.records)}</small></span><ChevronRight size={18}/></button>)}</div></Disclosure></>:<><div className="selected-course"><div><p className="eyebrow">{channelMap.get(selected.channelId)?.name}</p><h3>{selected.title}</h3></div><button className="text-button" onClick={()=>setSource('')}>講座を選び直す</button></div><ResumeCourse series={selected} learning={learning} ids={node.videoIds} subjectId={node.subjectId} playlistScope={`node:${node.id}`}/><VideoList videos={selected.videoIds.filter(id=>node.videoIds.includes(id)).map(id=>videoMap.get(id)!)} learning={learning} seriesId={selected.id} subjectId={node.subjectId} contextLabel={node.title} playlistScope={`node:${node.id}`}/></>}
 
    </section>}
    {node.targets?.length&&<Disclosure stateKey="chapter-targets" title="情報Ⅰの章へ直接移動" count={node.targets.length} defaultOpen={!children.length}><div className="chapter-targets">{node.targets.map((target,i)=>{const video=videoMap.get(target.videoId)!;return <a key={`${target.videoId}-${target.startSeconds}-${i}`} href={`${videoHref(video,video.seriesIds[0])}&t=${target.startSeconds}&category=${node.id}`}><span>{time(target.startSeconds)}</span><span>{target.title}</span><ChevronRight size={16}/></a>;})}</div></Disclosure>}
