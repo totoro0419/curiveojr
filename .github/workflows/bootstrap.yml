@@ -28,6 +28,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # GitHub Actions tokens cannot create or modify other workflow files.
+          rm -f .github/workflows/pages.yml .github/workflows/verify-pr.yml
           git add -A
           if ! git diff --cached --quiet; then
             git commit -m "Bootstrap Curiveo Jr. pink app and starter lessons"
