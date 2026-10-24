@@ -94,10 +94,12 @@ for(const v of c.videos){
  if(!v.title.trim()||v.originalTitle!==originals.get(v.id).originalTitle)throw Error('Integrity error '+v.id);
  if(v.title!==originals.get(v.id).title){
   changedBySubject[v.subjectId]=(changedBySubject[v.subjectId]||0)+1;
-  if(examples.length<200)examples.push({id:v.id,subjectId:v.subjectId,channelId:v.channelId,from:originals.get(v.id).title,to:v.title});
+  examples.push({id:v.id,subjectId:v.subjectId,channelId:v.channelId,from:originals.get(v.id).title,to:v.title});
  }
 }
 const changed=Object.values(changedBySubject).reduce((n,x)=>n+x,0);
+const samples=[...new Set(c.videos.map(v=>v.subjectId))].flatMap(id=>examples.filter(e=>e.subjectId===id).slice(0,50));
+const shortTitles=c.videos.filter(v=>v.title.trim().length<3).map(v=>({id:v.id,title:v.title,originalTitle:v.originalTitle}));
 c.displayTitleEdition={version:VERSION,method:'conservative-display-heading-cleanup',changed,changedBySubject};
 writeFileSync(path,JSON.stringify(c,null,2)+'\n');
 mkdirSync('docs/content',{recursive:true});
@@ -109,7 +111,8 @@ writeFileSync('docs/content/TITLE_EDIT_REPORT.md',
  '- 編集後の同名化を防ぐため元の表示名へ戻した動画: '+reverted.size+'本\n'+
  '- 動画ID、元の公式タイトル originalTitle、講座内順序、再生時間は維持。\n'+
  '- 内容の全件視聴確認ではなく表示タイトルの初期整形です。\n'+
+ '- 原題が短すぎて内容を判定できない要確認タイトル: '+shortTitles.length+'本（原題を保持）\n'+
  '- 変更サンプル: docs/content/title-edit-examples.json\n');
-writeFileSync('docs/content/title-edit-examples.json',JSON.stringify(examples,null,2)+'\n');
+writeFileSync('docs/content/title-edit-examples.json',JSON.stringify({samples,shortTitles:shortTitles.slice(0,80)},null,2)+'\n');
 console.log('TITLE EDIT '+JSON.stringify({total:c.videos.length,changed,unchanged:c.videos.length-changed,bySubject:changedBySubject,reverted:reverted.size}));
-for(const ex of examples.slice(0,35))console.log('EXAMPLE '+JSON.stringify(ex));
+for(const ex of samples.filter((e,i)=>i<15||i%50===0))console.log('EXAMPLE '+JSON.stringify(ex));
