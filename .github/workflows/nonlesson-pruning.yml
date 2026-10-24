@@ -20,10 +20,10 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci --no-audit --no-fund
-      - name: Remove strictly identified promotions, archive audit evidence
+      - name: Reconstruct all source lessons, then prune strictly identified promotions
         run: |
           node --check scripts/prune-nonlessons.mjs
-          npm run content:prune
+          npm run content:integrate
       - name: Verify all remaining lessons and check build
         run: |
           npm run test:content
@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/catalog.json src/data/catalog-runtime.json docs/content/NON_LESSON_REMOVAL.json docs/content/NON_LESSON_REMOVAL.md
+          git add src/data/catalog.json src/data/catalog-runtime.json docs/content/NON_LESSON_REMOVAL.json docs/content/NON_LESSON_REMOVAL.md docs/content/TITLE_EDIT_REPORT.md docs/content/title-edit-examples.json data/content/import-audit.json
           if ! git diff --cached --quiet; then
             git commit -m "Remove verified non-lesson promotions from catalog and all playlists"
             git push
