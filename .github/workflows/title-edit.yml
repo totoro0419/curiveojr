@@ -30,7 +30,9 @@ jobs:
           npm run test:content
           npm run build
       - name: Confirm saved titles and original title preservation
-        run: node scripts/test-display-titles.mjs
+        run: |
+          node scripts/test-display-titles.mjs
+          cat docs/content/TITLE_EDIT_REPORT.md
       - name: Commit source and runtime title improvements
         run: |
           git config user.name "github-actions[bot]"
