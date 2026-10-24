@@ -850,6 +850,8 @@ export function App() {
   const pwa=usePwa();
   const [path, queryString = ""] = route.split("?");
   const parts = path.split("/").filter(Boolean);
+  // A category ID may contain URL-significant characters. Recover old unescaped links too.
+  const categoryId = (() => { const raw = parts.slice(1).join("/"); try { return decodeURIComponent(raw); } catch { return raw; } })();
   const params = new URLSearchParams(queryString);
   const learning = useLearning();
   const [online, setOnline] = useState(navigator.onLine);
@@ -945,7 +947,7 @@ export function App() {
           ) : current === "route" ? (
             <LearningRoutePage key={path} id={parts[1]} learning={learning}/>
           ) : current === "category" ? (
-            <HierarchyPage key={path} nodeId={parts[1]} learning={learning} />
+            <HierarchyPage key={path} nodeId={categoryId} learning={learning} />
           ) : current === "unit" ||
             current === "course" ||
             current === "channel" ? (

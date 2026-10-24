@@ -21,7 +21,7 @@
     "catalog:runtime": "node scripts/build-catalog-runtime.mjs",
     "content:integrate": "python3 scripts/content/integrate.py && node scripts/build-catalog-runtime.mjs",
     "content:validate": "node scripts/validate-content.mjs",
-    "test:content": "node scripts/validate-content.mjs && node scripts/test-watch-context.mjs && node scripts/test-watch-layout.mjs && node scripts/test-watch-playlist-duration.mjs && node scripts/test-resume-selection.mjs && node scripts/test-playlist-readable-rows.mjs && node scripts/test-app-notifications.mjs"
+    "test:content": "node scripts/validate-content.mjs && node scripts/test-watch-context.mjs && node scripts/test-watch-layout.mjs && node scripts/test-watch-playlist-duration.mjs && node scripts/test-resume-selection.mjs && node scripts/test-playlist-readable-rows.mjs && node scripts/test-app-notifications.mjs && node scripts/test-hierarchy-routing.mjs"
   },
   "dependencies": {
     "firebase": "^12.4.0",

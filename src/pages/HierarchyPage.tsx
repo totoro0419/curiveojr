@@ -1,10 +1,10 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, ChevronRight, ExternalLink, Play } from 'lucide-react';
 import { catalog, seriesInSubject, routeMap, routeSequence, channelMap, subjectMap, seriesMap, unitMap, videoMap, progress, videoHref, time } from '../catalog';
 import type { Series, SubjectId, Video } from '../types';
-import { hierarchyRoots, learningNodes, getNodePath, nodeVideos, nodeHref } from '../navigation/hierarchy';
+import { hierarchyRoots, learningNodes, getNodePath, nodeVideos, nodeHref, recoveryHrefForMissingNode } from '../navigation/hierarchy';
 import { courseOutline } from '../navigation/course-outline';
-import { useViewState } from '../navigation/route';
+import { go, useViewState } from '../navigation/route';
 import { CourseList, ProgressBar, VideoList, icons } from '../components/catalog-ui';
 import type { Learning } from '../components/catalog-ui';
 import { Disclosure } from '../components/Disclosure';
@@ -18,11 +18,15 @@ function ChannelCourses({courses,learning,subjectId}:{courses:Series[];learning:
 function ResumeCourse({series,learning,ids,subjectId,playlistScope}:{series:Series;learning:Learning;ids?:string[];subjectId?:string;playlistScope?:string}){const sequence=series.videoIds.filter(id=>!ids||ids.includes(id));const recent=sequence.map(id=>learning.records[id]).filter(r=>r&&r.lastViewedAt>0&&r.status!=='completed'&&!r.playbackEnded).sort((a,b)=>b.lastViewedAt-a.lastViewedAt)[0];const video=videoMap.get(recent?.videoId||sequence[0]);if(!video)return null;return <a className="course-start interactive-card" href={videoHref(video,series.id,undefined,subjectId,playlistScope)}><span className="start-play"><Play size={20} fill="currentColor"/></span><span><strong>{recent?'続きから学ぶ':'講座を最初から学ぶ'}</strong><small>{recent?`${time(recent.position)} から再開 · `:''}{video.title}</small></span><ArrowRight size={20}/></a>;}
 export default function HierarchyPage({subjectId,nodeId,learning}:{subjectId?:string;nodeId?:string;learning:Learning}){
  const node=learningNodes.get(nodeId||hierarchyRoots[subjectId as SubjectId]);
+ const recoveryHref=recoveryHrefForMissingNode(nodeId,subjectId);
+ // Old installed PWA links may reference categories removed during catalog migration.
+ // Recover into a working subject or discovery page instead of trapping the learner.
+ useEffect(()=>{if(!node)go(recoveryHref.slice(1));},[node,recoveryHref]);
  const historySubject=node?.subjectId==='japanese-history'||node?.subjectId==='world-history';
  const [mode,setMode]=useViewState(historySubject?'history-subject-mode':'subject-mode',historySubject?'topics':'courses');
  const [source,setSource]=useViewState('topic-source','');
  const list=useMemo(()=>node?nodeVideos(node.id):[],[node]);
- if(!node)return <div className="empty">分類が見つかりません。<a href="#/discover">教科一覧へ</a></div>;
+ if(!node)return <div className="empty"><h2>教材一覧を更新しました</h2><p>以前の分類リンクから、現在の教科・講座一覧へ移動します。</p><a className="button primary" href={recoveryHref}>最新の教材を探す</a></div>;
  const subject=subjectMap.get(node.subjectId)!;const Icon=icons[subject.icon]||BookOpen;
  const path=getNodePath(node.id);const isRoot=node.kind==='subject';
  const courses=sortCourses(catalog.series.filter(series=>seriesInSubject(series,node.subjectId)&&series.videoIds.some(id=>node.videoIds.includes(id))));

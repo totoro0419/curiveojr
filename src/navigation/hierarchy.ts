@@ -51,7 +51,14 @@ export function getNodePath(id:string){const arr:LearningNode[]=[];
  let node=learningNodes.get(id);while(node){arr.unshift(node);node=node.parentId?learningNodes.get(node.parentId):undefined;}return arr;}
 export function nodeVideos(id:string):Video[]{return (learningNodes.get(id)?.videoIds||[]).flatMap(id=>{const v=videoMap.get(id);return v?[v]:[];});}
 export function videoNodePath(videoId:string){return getNodePath(videoLeaves.get(videoId)?.[0]||"");}
-export function nodeHref(node:LearningNode){return node.kind==="subject"?"#/subject/"+node.subjectId:"#/category/"+node.id;}
+export function nodeHref(node:LearningNode){return node.kind==="subject"?"#/subject/"+node.subjectId:"#/category/"+encodeURIComponent(node.id);}
+export function recoveryHrefForMissingNode(nodeId?:string,subjectId?:string){
+ const match=catalog.subjects
+  .slice().sort((a,b)=>b.id.length-a.id.length)
+  .find(s=>s.id===subjectId||nodeId?.startsWith("learn-"+s.id+"-")||
+   nodeId?.startsWith("field-"+s.id+":")||nodeId?.startsWith("unit-"+s.id+"-"));
+ return match?"#/subject/"+match.id:"#/discover";
+}
 export function primarySeriesFor(node:LearningNode):Series|undefined{
  const candidates=catalog.series.filter(s=>seriesInSubject(s,node.subjectId)&&s.videoIds.some(id=>node.videoIds.includes(id)));
  return candidates.sort((a,b)=>b.videoIds.filter(id=>node.videoIds.includes(id)).length-a.videoIds.filter(id=>node.videoIds.includes(id)).length)[0];
