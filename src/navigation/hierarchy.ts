@@ -41,9 +41,20 @@ for(const video of catalog.videos){
   }
  }
 }
+const preferredFields:Record<string,string[]>={
+ mathematics:['数と計算','数の性質','割合と比','文章題','速さ','平面図形','立体図形','場合の数','整理と推理','算数総合'],
+ japanese:['読解','言葉の知識','文法'],
+ chemistry:['生物','地学','物理','化学','理科総合','環境'],
+ 'japanese-history':['地理','歴史','公民','社会総合']
+};
 for(const node of learningNodes.values()){
  node.videoIds.sort((a,b)=>videoRank.get(a)!-videoRank.get(b)!);
  node.children.sort((a,b)=>{const left=learningNodes.get(a)!,right=learningNodes.get(b)!;
+  if(node.kind==='subject'){
+    const fields=preferredFields[node.subjectId]||[];
+    const ai=fields.indexOf(left.title),bi=fields.indexOf(right.title);
+    if(ai!==bi)return (ai<0?999:ai)-(bi<0?999:bi);
+  }
   const idx=(n:LearningNode)=>Math.min(...n.sourceUnitIds.map(id=>unitRank.get(id)??-1).filter(i=>i>=0));
   return idx(left)-idx(right);});
 }
@@ -51,7 +62,10 @@ export function getNodePath(id:string){const arr:LearningNode[]=[];
  let node=learningNodes.get(id);while(node){arr.unshift(node);node=node.parentId?learningNodes.get(node.parentId):undefined;}return arr;}
 export function nodeVideos(id:string):Video[]{return (learningNodes.get(id)?.videoIds||[]).flatMap(id=>{const v=videoMap.get(id);return v?[v]:[];});}
 export function videoNodePath(videoId:string){return getNodePath(videoLeaves.get(videoId)?.[0]||"");}
-export function nodeHref(node:LearningNode){return node.kind==="subject"?"#/subject/"+node.subjectId:"#/category/"+encodeURIComponent(node.id);}
+export function nodeHref(node:LearningNode){
+ if(node.id==='field-japanese-history:歴史')return '#/history';
+ return node.kind==="subject"?"#/subject/"+node.subjectId:"#/category/"+encodeURIComponent(node.id);
+}
 export function recoveryHrefForMissingNode(nodeId?:string,subjectId?:string){
  const match=catalog.subjects
   .slice().sort((a,b)=>b.id.length-a.id.length)
