@@ -73,9 +73,11 @@ try{
  await waitRoute(page,/^#\/history$/);
  await page.locator('a[href="#/history/core"]').first().click();
  await waitRoute(page,/^#\/history\/core$/);
+ await page.locator('a[href^="#/history/era/"]').first().waitFor({timeout:15000});
  check(await page.locator('a[href^="#/history/era/"]').count()===11,'History: eleven named eras');
  await page.locator('a[href="#/history/era/ancient"]').click();
  await waitRoute(page,/^#\/history\/era\/ancient$/);
+ await page.locator('.video-row').first().waitFor({timeout:15000});
  check(await page.locator('.video-row').count()===3,'History: three foundational ancient lessons, no unrelated videos');
  await page.locator('.video-row').first().click();
  await waitRoute(page,/^#\/watch\//);
