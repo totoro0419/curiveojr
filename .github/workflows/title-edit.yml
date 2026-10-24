@@ -22,6 +22,7 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - name: Edit all 6849 catalog labels without altering sources
         run: |
+          node --check scripts/standardize-titles.mjs
           node scripts/standardize-titles.mjs
           node scripts/build-catalog-runtime.mjs
       - name: Validate catalog, chronology and unchanged reference structure
