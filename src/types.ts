@@ -9,6 +9,7 @@ export type SubjectId =
   | "information";
 export type Role = "core" | "reinforcement" | "exam" | "advanced";
 export interface Subject {
+  channelOrder?: string[];
   id: SubjectId;
   name: string;
   shortName: string;

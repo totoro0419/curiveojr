@@ -49,7 +49,7 @@ def clean(t,ch,field=''):
 # Conservative first-match topic classification. Unknown titles retain their official course heading.
 RULES={
 'mathematics':[
- ('数の性質','倍数・約数',r'倍数|約数|素数|公倍|公約'),('数の性質','余り・整数条件',r'余り|あまり|整数条件|整数問題'),('数の性質','規則性・周期・数列',r'規則|周期|数列|階差|日暦|曜日|カレンダー|N進法|n進法'),
+ ('数の性質','倍数・約数',r'倍数(?!算)|約数|素数|公倍|公約'),('数の性質','余り・整数条件',r'余り|あまり|整数条件|整数問題'),('数の性質','規則性・周期・数列',r'規則|周期|数列|階差|日暦|曜日|カレンダー|N進法|n進法'),
  ('文章題','つるかめ算',r'つるかめ|鶴亀'),('文章題','和差算・分配算',r'和差算|分配算'),('文章題','消去算',r'消去算'),('文章題','過不足算・差集め算',r'過不足|差集め'),('文章題','年齢算・倍数算',r'年齢|年令|倍数算'),('文章題','平均算',r'平均算|平均点'),('文章題','植木算・方陣算',r'植木算|方陣算'),('文章題','仕事算・ニュートン算',r'仕事算|ニュートン'),('整理と推理','条件整理・論理・推理',r'推理|論理|条件整理|うそつき'),('文章題','集合',r'集合|ベン図'),
  ('割合と比','食塩水',r'食塩|濃度|濃さ'),('割合と比','売買損益',r'売買|損益|定価|利益|割引|原価'),('割合と比','相当算・還元算',r'相当算|還元算'),('割合と比','割合・比',r'割合|百分率|比例|反比例|比の|比を|比①|比②|比③|比④'),
  ('速さ','時計算',r'時計|長針|短針'),('速さ','通過算・流水算',r'通過算|流水算|電車回廊|動く歩道'),('速さ','旅人算',r'旅人算|出会い|追いつ|追いかけ'),('速さ','ダイヤグラム',r'ダイヤグラム|速さ.*グラフ'),('速さ','速さの基本',r'速さ|歩幅|歩数'),
@@ -72,11 +72,17 @@ RULES={
 }
 def classify(subject,title,fallback,unit=None):
  t=norm(title)
+ if subject=='chemistry' and re.search(r'電流と発熱|電熱線',t):return '物理','電熱線・発熱'
+ if subject=='chemistry' and re.search(r'磁界|電磁石',t):return '物理','磁石・電磁石'
  for f,u,pat in RULES[subject]:
   if re.search(pat,t):return f,u
  return fallback,unit or fallback
 
-def series(sid,title,ch,subject,url,kind,level='基礎〜応用'):
+def series(sid,title,ch,subject,url,kind,level='中学受験'):
+ if '偏差値60' in norm(title):level='応用・難関校対策'
+ elif '標準・発展' in title:level='標準・発展'
+ elif '基礎' in title:level='基礎'
+ elif '1から学ぶ' in norm(title):level='基礎から（範囲は目次参照）'
  if sid not in S:S[sid]={'id':sid,'title':title,'channelId':ch,'subjectId':subject,'level':level,'sourceUrl':url,'sourceKind':kind,'orderBasis':'official-playlist' if kind=='playlist' else 'official-index','videoIds':[],'lessons':[],'coverage':'','notice':'講義映像・音声の品質と全授業の再生は未確認です。'+(' 地理統計・公民制度・時事の最新情報との照合は未完了です。' if subject=='japanese-history' else '')}
  return S[sid]
 
@@ -92,7 +98,7 @@ def add(entry,s,field,unit,sourceOrder):
   exclusions.append({'videoId':vid,'seriesId':s['id'],'title':title,'reason':'異なる教科の再生リストへの混入（所属未確認）'});return
  uid=add_unit(subject,field,unit,s['sourceUrl']);duration=entry.get('durationSeconds')
  if vid not in V:
-  V[vid]={'id':vid,'title':clean(entry.get('displayTitle') or title,ch,unit),'originalTitle':title,'channelId':ch,'youtubeChannelId':entry.get('channelId') or CH[ch]['youtubeChannelId'],'uploaderName':entry.get('uploader') or CH[ch]['name'],'subjectId':subject,'level':entry.get('level','基礎〜応用'),'unitIds':[],'seriesIds':[],'order':len(V)+1,'role':entry.get('role') or ('advanced' if '偏差値60' in s['title'] else 'exam' if ch=='risukan' else 'core'),'sourceUrl':'https://www.youtube.com/watch?v='+vid,'verification':'verified','curriculum':'unverified','durationSeconds':duration,'thumbnailUrl':'https://i.ytimg.com/vi/'+vid+'/mqdefault.jpg','classificationEvidence':'公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: '+s['sourceUrl'],'availability':{'publicMetadata':'confirmed','embedMetadata':entry.get('embedMetadata','unverified'),'playback':'unverified','checkedAt':STAMP},'qualityReview':'unverified'}
+  V[vid]={'id':vid,'title':clean(entry.get('displayTitle') or title,ch,unit),'originalTitle':title,'channelId':ch,'youtubeChannelId':entry.get('channelId') or CH[ch]['youtubeChannelId'],'uploaderName':entry.get('uploader') or CH[ch]['name'],'subjectId':subject,'level':entry.get('level','中学受験（難易度未確認）'),'unitIds':[],'seriesIds':[],'order':len(V)+1,'role':entry.get('role') or ('advanced' if '偏差値60' in s['title'] else 'exam' if ch=='risukan' else 'core'),'sourceUrl':'https://www.youtube.com/watch?v='+vid,'verification':'verified','curriculum':'unverified','durationSeconds':duration,'thumbnailUrl':'https://i.ytimg.com/vi/'+vid+'/mqdefault.jpg','classificationEvidence':'公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: '+s['sourceUrl'],'availability':{'publicMetadata':'confirmed','embedMetadata':entry.get('embedMetadata','unverified'),'playback':'unverified','checkedAt':STAMP},'qualityReview':'unverified'}
  v=V[vid]
  if duration:
   if v['durationSeconds'] and v['durationSeconds']!=duration:raise ValueError('duration conflict '+vid)
@@ -126,7 +132,7 @@ for spec in selected:
   if subject=='japanese-history' and fallback in ['地理','公民','歴史'] and field!=fallback:field,unit=fallback,title.strip('【】')
   e=dict(e)
   # Official school-level signs are retained; do not invent a difficulty ranking.
-  e['level']='応用' if '偏差値60' in title or '発展' in title else '基礎' if '基礎' in title or '1から' in norm(title) else '基礎〜応用'
+  e['level']='応用' if '偏差値60' in title or '発展' in title else '基礎' if '基礎' in title or '1から' in norm(title) else '中学受験（難易度未確認）'
   if ch=='lab':e['role']='reinforcement'
   add(e,s,field,unit,i)
 
@@ -212,6 +218,8 @@ for sid,(ch,subject) in ALIASES.items():
  target=next((s['id'] for s in candidates if preferred in norm(s['title'])),candidates[0]['id'] if candidates else None)
  if target:redirects[sid]=target
 cat['legacySeriesRedirects']=redirects
+channel_orders={'mathematics':['keitaku','risukan','quick','kobachan','sakurara','suiri'],'chemistry':['quick','kobachan','lab','sakurara'],'japanese':['sakurara','genius','doctor','kokugo','sugimoto'],'japanese-history':['sakurara']}
+for subject in cat['subjects']:subject['channelOrder']=channel_orders[subject['id']]
 # Collected titles and source headings determine coverage evidence, never a completeness claim.
 cat['units']=list(U.values());cat['series']=list(S.values());cat['videos']=list(V.values())
 # Editorial routes sequence courses but never change the ordering inside a source course.

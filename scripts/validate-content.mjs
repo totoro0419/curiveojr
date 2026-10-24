@@ -44,8 +44,13 @@ for(const s of source.series){
  if(totals.missing===0)assert.equal(remainingPlaylistSeconds(direct,0,0),totals.seconds);
  else assert.equal(remainingPlaylistSeconds(direct,0,0),null);
 }
+for(const v of source.videos.filter(v=>v.subjectId==='mathematics'&&/倍数算/.test(v.title))){assert.ok(v.unitIds.some(id=>unitMap.get(id)?.field==='文章題'),`倍数算 classification: ${v.id}`);}
 for(const row of source.coverage){assert.ok(row.videoIds.every(id=>videoMap.get(id)?.subjectId===row.subjectId));assert.equal(row.status,row.videoIds.length?'listed':'missing');}
 assert.ok(source.subjects.length===4);
+for(const subject of source.subjects){assert.ok(subject.channelOrder?.length);assert.ok(subject.channelOrder.every(id=>source.channels.some(ch=>ch.id===id)));}
+assert.equal(source.subjects.find(s=>s.id==='mathematics').channelOrder[0],'keitaku');
+assert.equal(source.subjects.find(s=>s.id==='chemistry').channelOrder[0],'quick');
+assert.equal(source.subjects.find(s=>s.id==='japanese-history').channelOrder[0],'sakurara');
 for(const sid of ['mathematics','japanese','chemistry','japanese-history'])assert.ok(source.coverage.some(r=>r.subjectId===sid));
 const missing=source.videos.filter(v=>v.durationSeconds===null);
 console.log(JSON.stringify({status:'PASS',uniqueVideos:source.videos.length,courses:source.series.length,sourceOrderAndRuntimeChecks:source.series.length,durationKnown:source.videos.length-missing.length,durationMissing:missing.length,coverageRows:source.coverage.length,coverageWithoutEvidence:source.coverage.filter(r=>r.status==='missing').map(r=>r.topic)},null,2));
