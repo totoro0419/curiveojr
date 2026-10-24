@@ -10,7 +10,7 @@ const byId=new Map(c.videos.map(v=>[v.id,v]));
 for(const v of c.videos){
  assert.ok(v.title.trim().length>=3,'Empty/ambiguous title '+v.id);
  assert.ok(v.originalTitle?.trim(),'Original title missing '+v.id);
- assert.ok(v.sourceUrl.endsWith('/'+v.id),'Video link mismatch '+v.id);
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+v.id,'Video link mismatch '+v.id);
 }
 for(const s of c.series)assert.ok(s.videoIds.every(id=>byId.has(id)),'Missing video in '+s.id);
 const lectureSeries=c.series.filter(s=>s.subjectId==='japanese-history'&&/【歴史第[一二三]期】/.test(s.title));
