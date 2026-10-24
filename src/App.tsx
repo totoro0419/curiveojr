@@ -70,6 +70,7 @@ import { VideoActions } from "./components/VideoActions";
 import { collectAppNotices, type AppNotice } from "./lib/app-notifications";
 import { selectResumeRecommendation } from "./lib/resume-selection";
 const LazyHierarchyPage = lazy(preloadHierarchy);
+const LazyHistoryStudyPage = lazy(() => import("./pages/HistoryStudyPage"));
 const LazyLearningRoutePage=lazy(()=>preloadHierarchy().then(module=>({default:module.LearningRoutePage})));
 const LazyCollectionPage = lazy(()=>preloadHierarchy().then(module=>({default:module.CollectionPage})));
 
@@ -783,7 +784,7 @@ function SettingsPage({ learning, notifications }: { learning: Learning; notific
           ブラウザの「ホーム画面に追加」または「アプリをインストール」から利用できます。オフラインでは収録一覧と学習記録を開けます。動画の再生には通信が必要です。
         </p>
         <p className="small muted">{pwa.installed?"アプリとして起動しています。":pwa.installAvailable?"このブラウザからインストールできます。":"ブラウザのメニューまたは共有から「ホーム画面に追加」を選んでください。"}</p>
-        {pwa.installAvailable&&<button className="button primary" onClick={()=>void pwa.install().catch(()=>{})}><Download size={17}/>Curiveoをインストール</button>}
+        {pwa.installAvailable&&<button className="button primary" onClick={()=>void pwa.install().catch(()=>{})}><Download size={17}/>Curiveo Jr.をインストール</button>}
         <p className="small muted">{pwa.offlineReady?"オフライン用のアプリを端末に保存済み。":"オフライン用のアプリを準備中。初回はオンラインで開いてください。"}</p>
         <div className="action-row"><button className="button" disabled={pwa.applying} onClick={()=>void(pwa.updateAvailable?pwa.applyUpdate():pwa.checkForUpdate()).catch(()=>{})}><RotateCcw size={16}/>{pwa.applying?"記録を保存中…":pwa.updateAvailable?"保存して更新":"更新を確認"}</button></div>
       </section>
@@ -795,7 +796,7 @@ function SettingsPage({ learning, notifications }: { learning: Learning; notific
         </p>
         <p className="small muted">
           収録更新: {new Date(catalog.updatedAt).toLocaleDateString("ja-JP")} ·
-          Curiveo v1.1
+          Curiveo Jr.
         </p>
         {catalog.gaps.length > 0 && (
           <details>
@@ -944,6 +945,8 @@ export function App() {
             <DiscoverPage learning={learning} params={params} />
           ) : current === "subject" ? (
             <HierarchyPage key={path} subjectId={parts[1]} learning={learning} />
+          ) : current === "history" ? (
+            <LazyHistoryStudyPage key={path} section={parts[1]} eraId={parts[2]} learning={learning}/>
           ) : current === "route" ? (
             <LearningRoutePage key={path} id={parts[1]} learning={learning}/>
           ) : current === "category" ? (
