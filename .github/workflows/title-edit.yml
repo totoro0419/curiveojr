@@ -1,0 +1,39 @@
+name: Standardize Curiveo Jr. lesson titles
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/title-edit.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  standardize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Edit all 6849 catalog labels without altering sources
+        run: |
+          node scripts/standardize-titles.mjs
+          node scripts/build-catalog-runtime.mjs
+      - name: Validate catalog, chronology and unchanged reference structure
+        run: |
+          npm run test:content
+          npm run build
+      - name: Commit source and runtime title improvements
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/catalog.json src/data/catalog-runtime.json docs/content/TITLE_EDIT_REPORT.md docs/content/title-edit-examples.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Apply descriptive lesson titles across the Curiveo Jr. catalog"
+            git push
+          fi
