@@ -4060,6 +4060,7 @@
         "BHzHZTGu1Ms",
         "lGl7BeEI-8A",
         "rsN83mzePjg",
+        "RV1LoAXJyu8",
         "RIh5u9hjb3g",
         "65XHtvQTqpE",
         "pGBTl_YbsA4",
@@ -5568,6 +5569,11 @@
           "unitId": "mathematics-5b0f8732fd79"
         },
         {
+          "videoId": "RV1LoAXJyu8",
+          "sourceOrder": 299,
+          "unitId": "mathematics-5b0f8732fd79"
+        },
+        {
           "videoId": "RIh5u9hjb3g",
           "sourceOrder": 300,
           "unitId": "mathematics-5b0f8732fd79"
@@ -5697,7 +5703,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。",
       "listingComplete": true,
       "sourceCount": 325,
-      "excludedCount": 4,
+      "excludedCount": 3,
       "duplicateCount": 0
     },
     {
@@ -17010,7 +17016,6 @@
       "sourceKind": "playlist",
       "orderBasis": "official-playlist",
       "videoIds": [
-        "ft5teGiczXw",
         "oikleWE9G20",
         "L1PTqIxoLQM",
         "0LZWOpyW21M",
@@ -17133,11 +17138,6 @@
         "S83bmk9EplY"
       ],
       "lessons": [
-        {
-          "videoId": "ft5teGiczXw",
-          "sourceOrder": 1,
-          "unitId": "japanese-5158ba1bcbea"
-        },
         {
           "videoId": "oikleWE9G20",
           "sourceOrder": 2,
@@ -17743,7 +17743,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。",
       "listingComplete": true,
       "sourceCount": 121,
-      "excludedCount": 0,
+      "excludedCount": 1,
       "duplicateCount": 0
     },
     {
@@ -28472,7 +28472,6 @@
         "nyBes06N9Iw",
         "AR6nlnTTnBc",
         "qfrEXqhJ9QM",
-        "46fCslApmEc",
         "pRHya2iqeuY",
         "nYE9mPKJjwA",
         "TBQl7xp-0Ug",
@@ -28650,11 +28649,6 @@
           "videoId": "qfrEXqhJ9QM",
           "sourceOrder": 20,
           "unitId": "japanese-history-9be43035aedd"
-        },
-        {
-          "videoId": "46fCslApmEc",
-          "sourceOrder": 21,
-          "unitId": "japanese-history-16e47647ea93"
         },
         {
           "videoId": "pRHya2iqeuY",
@@ -29091,7 +29085,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。 地理統計・公民制度・時事の最新情報との照合は未完了です。",
       "listingComplete": true,
       "sourceCount": 109,
-      "excludedCount": 4,
+      "excludedCount": 5,
       "duplicateCount": 0
     },
     {
@@ -29118,7 +29112,6 @@
         "mOyDlzjhiXM",
         "ZMxrrUTfBzM",
         "uE1PGMrx2E4",
-        "46fCslApmEc",
         "PbkGwZf0SvI",
         "5ZiM5oy6IDI",
         "migMTJCFINM",
@@ -29254,11 +29247,6 @@
           "videoId": "uE1PGMrx2E4",
           "sourceOrder": 15,
           "unitId": "japanese-history-69ca339b80ea"
-        },
-        {
-          "videoId": "46fCslApmEc",
-          "sourceOrder": 17,
-          "unitId": "japanese-history-c64240620ecb"
         },
         {
           "videoId": "PbkGwZf0SvI",
@@ -29585,7 +29573,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。 地理統計・公民制度・時事の最新情報との照合は未完了です。",
       "listingComplete": true,
       "sourceCount": 82,
-      "excludedCount": 3,
+      "excludedCount": 4,
       "duplicateCount": 0
     },
     {
@@ -32570,7 +32558,6 @@
       "sourceKind": "playlist",
       "orderBasis": "official-playlist",
       "videoIds": [
-        "piiJ5m9N8cA",
         "5Gg1ZHuPRu4",
         "_b--Fzw79FY",
         "fW4BeYKCMd4",
@@ -32608,7 +32595,6 @@
         "ZHpBgLbCsGA",
         "9waoKHl9AJE",
         "yONX0Hl46Cs",
-        "cOW_v1I7A8g",
         "xgY4217_zMA",
         "OCl7wEeXMjs",
         "MsI5LIUi20I",
@@ -32661,11 +32647,6 @@
         "00xncyxKa_g"
       ],
       "lessons": [
-        {
-          "videoId": "piiJ5m9N8cA",
-          "sourceOrder": 1,
-          "unitId": "chemistry-756ce1d7b7d8"
-        },
         {
           "videoId": "5Gg1ZHuPRu4",
           "sourceOrder": 2,
@@ -32849,11 +32830,6 @@
         {
           "videoId": "yONX0Hl46Cs",
           "sourceOrder": 38,
-          "unitId": "chemistry-756ce1d7b7d8"
-        },
-        {
-          "videoId": "cOW_v1I7A8g",
-          "sourceOrder": 39,
           "unitId": "chemistry-756ce1d7b7d8"
         },
         {
@@ -33111,7 +33087,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。",
       "listingComplete": true,
       "sourceCount": 91,
-      "excludedCount": 2,
+      "excludedCount": 4,
       "duplicateCount": 0
     },
     {
@@ -33134,7 +33110,6 @@
         "HBNEBrR7KHs",
         "IwT89smJ81E",
         "HX9JPZHPJpw",
-        "46fCslApmEc",
         "A2WGZgpmlnU",
         "Rh1_aow4G9Y",
         "lNM2ty90r1w",
@@ -33222,11 +33197,6 @@
           "videoId": "HX9JPZHPJpw",
           "sourceOrder": 11,
           "unitId": "japanese-history-24f38022183f"
-        },
-        {
-          "videoId": "46fCslApmEc",
-          "sourceOrder": 13,
-          "unitId": "japanese-history-706918bcbd08"
         },
         {
           "videoId": "A2WGZgpmlnU",
@@ -33413,7 +33383,7 @@
       "notice": "講義映像・音声の品質と全授業の再生は未確認です。 地理統計・公民制度・時事の最新情報との照合は未完了です。",
       "listingComplete": true,
       "sourceCount": 49,
-      "excludedCount": 2,
+      "excludedCount": 3,
       "duplicateCount": 0
     },
     {
@@ -62215,6 +62185,42 @@
       "curriculum": "unverified",
       "durationSeconds": 168,
       "thumbnailUrl": "https://i.ytimg.com/vi/rsN83mzePjg/mqdefault.jpg",
+      "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG",
+      "availability": {
+        "publicMetadata": "confirmed",
+        "embedMetadata": "unverified",
+        "playback": "unverified",
+        "checkedAt": "2026-10-24"
+      },
+      "qualityReview": "unverified",
+      "durationEvidence": {
+        "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG",
+        "method": "youtube-public-playlist",
+        "checkedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "RV1LoAXJyu8",
+      "title": "文章題•差集め算④3本多く買う",
+      "originalTitle": "【中学受験】算数文章題•差集め算④3本多く買う",
+      "channelId": "sakurara",
+      "youtubeChannelId": "UCFOADXtB3WbWlHSasEJIeJA",
+      "uploaderName": "中学受験さくららチャンネル",
+      "subjectId": "mathematics",
+      "level": "中学受験（難易度未確認）",
+      "unitIds": [
+        "mathematics-5b0f8732fd79"
+      ],
+      "seriesIds": [
+        "yt-PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG"
+      ],
+      "order": 399,
+      "role": "core",
+      "sourceUrl": "https://www.youtube.com/watch?v=RV1LoAXJyu8",
+      "verification": "verified",
+      "curriculum": "unverified",
+      "durationSeconds": 168,
+      "thumbnailUrl": "https://i.ytimg.com/vi/RV1LoAXJyu8/mqdefault.jpg",
       "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfSJtiUSEMY4KDEuQkTtanG",
       "availability": {
         "publicMetadata": "confirmed",
@@ -130010,42 +130016,6 @@
       }
     },
     {
-      "id": "ft5teGiczXw",
-      "title": "日本一わかりやすい文法テキスト【中学受験の文法】これ1冊でOK！発売開始です。",
-      "originalTitle": "日本一わかりやすい文法テキスト【中学受験の文法】これ1冊でOK！発売開始です。",
-      "channelId": "sakurara",
-      "youtubeChannelId": "UCFOADXtB3WbWlHSasEJIeJA",
-      "uploaderName": "中学受験さくららチャンネル",
-      "subjectId": "japanese",
-      "level": "中学受験（難易度未確認）",
-      "unitIds": [
-        "japanese-5158ba1bcbea"
-      ],
-      "seriesIds": [
-        "yt-PLNDyK9mQcvDfIt1NYqE5rHY9Prv6uAW53"
-      ],
-      "order": 2278,
-      "role": "core",
-      "sourceUrl": "https://www.youtube.com/watch?v=ft5teGiczXw",
-      "verification": "verified",
-      "curriculum": "unverified",
-      "durationSeconds": 460,
-      "thumbnailUrl": "https://i.ytimg.com/vi/ft5teGiczXw/mqdefault.jpg",
-      "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfIt1NYqE5rHY9Prv6uAW53",
-      "availability": {
-        "publicMetadata": "confirmed",
-        "embedMetadata": "unverified",
-        "playback": "unverified",
-        "checkedAt": "2026-10-24"
-      },
-      "qualityReview": "unverified",
-      "durationEvidence": {
-        "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDfIt1NYqE5rHY9Prv6uAW53",
-        "method": "youtube-public-playlist",
-        "checkedAt": "2026-10-24"
-      }
-    },
-    {
       "id": "oikleWE9G20",
       "title": "文法｜1主語と述語についてのコツは述語にあるって知っていますか？",
       "originalTitle": "【文法】1️⃣主語と述語についてのコツは述語にあるって知っていますか？",
@@ -191576,46 +191546,6 @@
       }
     },
     {
-      "id": "46fCslApmEc",
-      "title": "歴史のまとめ勉強法！",
-      "originalTitle": "受験生必見！歴史のまとめ勉強法！",
-      "channelId": "sakurara",
-      "youtubeChannelId": "UCFOADXtB3WbWlHSasEJIeJA",
-      "uploaderName": "中学受験さくららチャンネル",
-      "subjectId": "japanese-history",
-      "level": "中学受験（難易度未確認）",
-      "unitIds": [
-        "japanese-history-16e47647ea93",
-        "japanese-history-c64240620ecb",
-        "japanese-history-706918bcbd08"
-      ],
-      "seriesIds": [
-        "yt-PLNDyK9mQcvDfCo2cII4MlFt3H0mjf10FM",
-        "yt-PLNDyK9mQcvDevgH55AXoGQAWLmNqTJotC",
-        "yt-PLNDyK9mQcvDeSsvaFwKCG94EOGz2jazwh"
-      ],
-      "order": 3989,
-      "role": "core",
-      "sourceUrl": "https://www.youtube.com/watch?v=46fCslApmEc",
-      "verification": "verified",
-      "curriculum": "unverified",
-      "durationSeconds": 361,
-      "thumbnailUrl": "https://i.ytimg.com/vi/46fCslApmEc/mqdefault.jpg",
-      "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDfCo2cII4MlFt3H0mjf10FM",
-      "availability": {
-        "publicMetadata": "confirmed",
-        "embedMetadata": "unverified",
-        "playback": "unverified",
-        "checkedAt": "2026-10-24"
-      },
-      "qualityReview": "unverified",
-      "durationEvidence": {
-        "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDeSsvaFwKCG94EOGz2jazwh",
-        "method": "youtube-public-playlist",
-        "checkedAt": "2026-10-24"
-      }
-    },
-    {
       "id": "pRHya2iqeuY",
       "title": "歴史•鎌倉幕府①",
       "originalTitle": "社会歴史•鎌倉幕府①",
@@ -214405,42 +214335,6 @@
       }
     },
     {
-      "id": "piiJ5m9N8cA",
-      "title": "これで完結【理科生物】発売開始します",
-      "originalTitle": "これで完結【理科生物】発売開始します‼",
-      "channelId": "sakurara",
-      "youtubeChannelId": "UCFOADXtB3WbWlHSasEJIeJA",
-      "uploaderName": "中学受験さくららチャンネル",
-      "subjectId": "chemistry",
-      "level": "中学受験（難易度未確認）",
-      "unitIds": [
-        "chemistry-756ce1d7b7d8"
-      ],
-      "seriesIds": [
-        "yt-PLNDyK9mQcvDe-ObY2SSq1jjNzsZph6oU8"
-      ],
-      "order": 4623,
-      "role": "core",
-      "sourceUrl": "https://www.youtube.com/watch?v=piiJ5m9N8cA",
-      "verification": "verified",
-      "curriculum": "unverified",
-      "durationSeconds": 332,
-      "thumbnailUrl": "https://i.ytimg.com/vi/piiJ5m9N8cA/mqdefault.jpg",
-      "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDe-ObY2SSq1jjNzsZph6oU8",
-      "availability": {
-        "publicMetadata": "confirmed",
-        "embedMetadata": "unverified",
-        "playback": "unverified",
-        "checkedAt": "2026-10-24"
-      },
-      "qualityReview": "unverified",
-      "durationEvidence": {
-        "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDe-ObY2SSq1jjNzsZph6oU8",
-        "method": "youtube-public-playlist",
-        "checkedAt": "2026-10-24"
-      }
-    },
-    {
       "id": "5Gg1ZHuPRu4",
       "title": "理科生物｜1植物①種子を植えなければ芽は出ません",
       "originalTitle": "【理科生物】1️⃣植物①種子を植えなければ芽は出ません",
@@ -215758,42 +215652,6 @@
       "curriculum": "unverified",
       "durationSeconds": 755,
       "thumbnailUrl": "https://i.ytimg.com/vi/yONX0Hl46Cs/mqdefault.jpg",
-      "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDe-ObY2SSq1jjNzsZph6oU8",
-      "availability": {
-        "publicMetadata": "confirmed",
-        "embedMetadata": "unverified",
-        "playback": "unverified",
-        "checkedAt": "2026-10-24"
-      },
-      "qualityReview": "unverified",
-      "durationEvidence": {
-        "sourceUrl": "https://www.youtube.com/playlist?list=PLNDyK9mQcvDe-ObY2SSq1jjNzsZph6oU8",
-        "method": "youtube-public-playlist",
-        "checkedAt": "2026-10-24"
-      }
-    },
-    {
-      "id": "cOW_v1I7A8g",
-      "title": "祝「理科生物」書き上がりました。発売決定です。",
-      "originalTitle": "祝‼「理科生物」書き上がりました。発売決定です。",
-      "channelId": "sakurara",
-      "youtubeChannelId": "UCFOADXtB3WbWlHSasEJIeJA",
-      "uploaderName": "中学受験さくららチャンネル",
-      "subjectId": "chemistry",
-      "level": "中学受験（難易度未確認）",
-      "unitIds": [
-        "chemistry-756ce1d7b7d8"
-      ],
-      "seriesIds": [
-        "yt-PLNDyK9mQcvDe-ObY2SSq1jjNzsZph6oU8"
-      ],
-      "order": 4661,
-      "role": "core",
-      "sourceUrl": "https://www.youtube.com/watch?v=cOW_v1I7A8g",
-      "verification": "verified",
-      "curriculum": "unverified",
-      "durationSeconds": 250,
-      "thumbnailUrl": "https://i.ytimg.com/vi/cOW_v1I7A8g/mqdefault.jpg",
       "classificationEvidence": "公式目次・動画タイトルに基づく分類。講義映像の品質精査は未確認。出典: https://www.youtube.com/playlist?list=PLNDyK9mQcvDe-ObY2SSq1jjNzsZph6oU8",
       "availability": {
         "publicMetadata": "confirmed",
@@ -296245,6 +296103,7 @@
         "BHzHZTGu1Ms",
         "lGl7BeEI-8A",
         "rsN83mzePjg",
+        "RV1LoAXJyu8",
         "RIh5u9hjb3g",
         "65XHtvQTqpE",
         "pGBTl_YbsA4",
@@ -300319,7 +300178,6 @@
       "field": "文法",
       "topic": "品詞・活用",
       "videoIds": [
-        "ft5teGiczXw",
         "n1-u8m6g9h0",
         "yY0dmrqzMts",
         "YqziSt7s-GE",
@@ -301912,7 +301770,6 @@
       "topic": "古墳・飛鳥",
       "videoIds": [
         "lAxuuOkISug",
-        "46fCslApmEc",
         "mUXFFbaqYsc",
         "MZ-N2rdIVok",
         "AteP3c4pn6E",
@@ -301935,7 +301792,6 @@
       "videoIds": [
         "P64u4m8XlP8",
         "oj1PkanUyPs",
-        "46fCslApmEc",
         "MZ-N2rdIVok",
         "oDx7cHReNV0",
         "N7cQ-Slp_88",
@@ -302441,8 +302297,8 @@
   },
   "nonLessonCleanup": {
     "version": 1,
-    "removedCount": 3,
-    "needsReviewCount": 5,
+    "removedCount": 6,
+    "needsReviewCount": 2,
     "rules": "strict-original-title"
   }
 }
