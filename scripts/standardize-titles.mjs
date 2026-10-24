@@ -11,6 +11,20 @@ const byId=new Map(c.videos.map(v=>[v.id,v]));
 const examples=[],changedBySubject={};
 function pretty(v){
  let title=v.title;
+ // The author-provided Japanese reading series embeds lesson numbers as keycap
+ // emoji. Display these as consistent, distinguishable episode headings.
+ if(v.subjectId==='japanese'&&v.channelId==='sakurara'&&/国語基礎講座/.test(title)){
+  const plain=title.replace(/[\uFE0F\u20E3]/g,'');
+  const episode=plain.match(/^(?:(?:【)?国語基礎講座(?:第)?(\d{1,3})回?】?|(?:\d{1,3})【?国語基礎講座】?)|(?:\d{1,3}))/);
+  if(episode){
+   const digits=(episode[1]||episode[0].match(/\d{1,3}/)?.[0]||'');
+   const num=Number(digits);
+   if(num>=1&&num<=150){
+    let rest=plain.slice(episode[0].length).replace(/【?国語基礎講座】?/g,'').trim();
+    if(rest.length>=3)title='第'+String(num).padStart(2,'0')+'回｜'+rest;
+   }
+  }
+ }
  const history=title.match(/^\s*【歴史】\s*((?:[0-9][\uFE0F]?\u20E3)+)\s*(.+)$/u);
  if(v.subjectId==='japanese-history'&&history){
   const no=Number(history[1].replace(/[^0-9]/g,''));
