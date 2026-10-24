@@ -17,28 +17,14 @@ for(const video of catalog.videos){
   assert.ok(result.detail.length < 45,'Unbounded detail '+video.id);
   assert.deepEqual(result,playlistLessonLabel(video),'Nondeterministic label '+video.id);
 }
-assert.equal(label('SU7oEOnUxSQ').title,'反応速度とは');
-assert.equal(label('Xwzoc-x92QU').title,'反応速度式');
-assert.equal(label('g8ly6uWpFoA').title,'活性化エネルギー・反応速度を変える条件');
-assert.ok(label('g8ly6uWpFoA').detail.includes('#3'));
-const duplicateSeries = catalog.series.find(s =>
-  s.videoIds.slice(0,2).every(id => byId.get(id)?.title.includes('単項式・多項式・次数・係数')));
-assert.ok(duplicateSeries,'Expected source-series duplicate');
-const firstTwo = duplicateSeries.videoIds.slice(0,2).map(label);
-assert.equal(firstTwo[0].title,firstTwo[1].title);
-assert.notEqual(firstTwo[0].detail,firstTwo[1].detail,'Duplicate lesson labels need distinct sequence numbers');
-
-const mundi = catalog.videos.find(v => v.channelId==='mundi');
-assert.ok(mundi);
-assert.ok(playlistLessonLabel(mundi).title.length < mundi.title.length,'Source series branding should be hidden');
-
-const tadayobi = catalog.videos.find(v=>v.channelId==='tadayobi'&&v.title.includes('第1講'));
-assert.ok(tadayobi);
-assert.ok(playlistLessonLabel(tadayobi).detail.includes('#1'),'Tadayobi lecture number must remain');
-const taniguchi = catalog.videos.find(v=>v.channelId==='taniguchi'&&v.topic);
-assert.ok(taniguchi);
-assert.equal(playlistLessonLabel(taniguchi).title,taniguchi.topic);
-assert.ok(playlistLessonLabel(taniguchi).detail.includes('#1'));
+// Jr. catalog uses entrance-exam lessons; do not require the parent's high-school IDs.
+const keitaku=catalog.videos.find(v=>v.channelId==='keitaku'&&v.title==='和差算①');
+assert.ok(keitaku);assert.equal(label(keitaku.id).title,'和差算①');
+const vocabulary=catalog.videos.find(v=>v.channelId==='genius'&&v.title.startsWith('語彙'));
+assert.ok(vocabulary);assert.ok(label(vocabulary.id).title.includes('語彙'));
+const multi=catalog.videos.find(v=>v.seriesIds.length>1);
+assert.ok(multi,'Repeated source references share one learning record');
+assert.deepEqual(label(multi.id),playlistLessonLabel(multi));
 
 const app=readFileSync('src/App.tsx','utf8');
 const css=readFileSync('src/styles.css','utf8');

@@ -2019,3 +2019,5 @@ html[data-section-motion=native] .results-enter[role=tabpanel] { view-transition
 .disclosure-meta { display:block;font-weight:400;font-size:11px;line-height:1.55;color:#72849e;overflow-wrap:anywhere; }
 .hierarchy-card .group-duration { color:#6b829d;font-size:11px;line-height:1.65;margin-top:4px; }
 .subject-duration-summary { font-size:11px;margin:8px 0 5px;color:#7589a2; }
+
+.coverage-list{list-style:none;margin:12px 0;padding:0}.coverage-list li{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border,#f4dce8)}.coverage-list li>span:first-child{display:flex;flex-direction:column;gap:4px}.coverage-list small{color:var(--muted,#6b7280)}.coverage-list .text-link{flex-shrink:0}@media(max-width:480px){.coverage-list li{align-items:flex-start}.coverage-list strong{font-size:14px}}

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc --noEmit && node scripts/validate-catalog.mjs && vite build && node scripts/build-sw.mjs",
+    "build": "node scripts/build-catalog-runtime.mjs && tsc --noEmit && node scripts/validate-catalog.mjs && vite build && node scripts/build-sw.mjs",
     "typecheck": "tsc --noEmit",
     "test:resume": "node scripts/test-resume-selection.mjs",
     "preview": "vite preview --host 0.0.0.0",
@@ -17,7 +17,11 @@
     "durations:test": "python3 -m unittest discover -s scripts -p \"test_duration_collector.py\" && node scripts/test-video-durations.mjs",
     "durations:audit": "python3 scripts/collect-video-durations.py && node scripts/test-video-durations.mjs --report",
     "durations:complete": "python3 scripts/collect-video-durations.py --require-complete",
-    "test:jr": "node scripts/validate-catalog.mjs"
+    "test:jr": "node scripts/validate-catalog.mjs",
+    "catalog:runtime": "node scripts/build-catalog-runtime.mjs",
+    "content:integrate": "python3 scripts/content/integrate.py && node scripts/build-catalog-runtime.mjs",
+    "content:validate": "node scripts/validate-content.mjs",
+    "test:content": "node scripts/validate-content.mjs && node scripts/test-watch-context.mjs && node scripts/test-watch-layout.mjs && node scripts/test-watch-playlist-duration.mjs && node scripts/test-resume-selection.mjs && node scripts/test-playlist-readable-rows.mjs && node scripts/test-app-notifications.mjs"
   },
   "dependencies": {
     "firebase": "^12.4.0",

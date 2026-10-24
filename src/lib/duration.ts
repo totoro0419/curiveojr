@@ -3,7 +3,7 @@ import durationStatuses from '../data/duration-status.json';
 import type { Video, LearningRecord } from '../types';
 const metadata=durations as Record<string,number>;
 const statuses=durationStatuses as Record<string,string>;
-function isAccepted(id:string){const status=statuses[id]??'';return /^(verified|accepted)@/.test(status)&&Date.parse(status.split('@')[1])>Date.now();}
+function isAccepted(video:Video){if(video.durationVerified&&video.durationSeconds)return true;if(['youtube-public-playlist','youtube-watch-page'].includes(video.durationEvidence?.method||'')&&video.durationSeconds)return true;const status=statuses[video.id]??'';return /^(verified|accepted)@/.test(status)&&Date.parse(status.split('@')[1])>Date.now();}
 export function videoDuration(video:Video,records:Record<string,LearningRecord>={}){
  const candidates=[metadata[video.id],video.durationSeconds,records[video.id]?.duration];
  return candidates.find((value):value is number=>typeof value==='number'&&Number.isSafeInteger(value)&&value>0)??null;
@@ -15,7 +15,7 @@ export function durationTime(seconds:number){
 export function totalDuration(videos:Video[],records:Record<string,LearningRecord>={}){
  const unique=[...new Map(videos.map(video=>[video.id,video])).values()];
  let seconds=0,missing=0,unverified=0;
- for(const video of unique){const duration=videoDuration(video,records);if(duration===null)missing++;else {seconds+=duration;if(!isAccepted(video.id))unverified++;}}
+ for(const video of unique){const duration=videoDuration(video,records);if(duration===null)missing++;else {seconds+=duration;if(!isAccepted(video))unverified++;}}
  return {seconds:Math.floor(seconds),missing,unverified,total:unique.length};
 }
 export function durationSummary(videos:Video[],records:Record<string,LearningRecord>={}){

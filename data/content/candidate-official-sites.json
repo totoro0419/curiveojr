@@ -1,0 +1,49 @@
+[
+  {
+    "id": "risukan",
+    "url": "https://sansu.online/",
+    "links": [
+      {
+        "title": "Youtubeチャンネル【理数館の算数の人】",
+        "url": "https://www.youtube.com/channel/UCOiKRFPEfq9T04MRxOYPdCQ"
+      },
+      {
+        "title": "Youtubeで見る",
+        "url": "https://www.youtube.com/channel/UCOiKRFPEfq9T04MRxOYPdCQ"
+      }
+    ]
+  },
+  {
+    "id": "sanyobi",
+    "url": "https://sanyobi.online/",
+    "links": [
+      {
+        "title": "さらに見る",
+        "url": "https://sanyobi.online/archives/category/youtube"
+      },
+      {
+        "title": "さんよび YouTubeチャンネル",
+        "url": "https://www.youtube.com/@sanyobi"
+      }
+    ]
+  },
+  {
+    "id": "lab",
+    "url": "https://science-labo.com/",
+    "links": []
+  },
+  {
+    "id": "genius",
+    "url": "https://labo-g.net/tensaku",
+    "links": [
+      {
+        "title": "0時間目のジーニアス",
+        "url": "https://www.youtube.com/channel/UCNPyqS6vleJk5gYKOPHsJYg"
+      },
+      {
+        "title": "YouTube 0時間目のジーニアス",
+        "url": "https://www.youtube.com/channel/UCNPyqS6vleJk5gYKOPHsJYg/"
+      }
+    ]
+  }
+]

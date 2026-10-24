@@ -1,0 +1,28 @@
+{
+  "id": "PLaBpAQ64SxcFgECO9Qp0qapAoFBwkq17q",
+  "title": "密度",
+  "channel": "lab",
+  "subject": "chemistry",
+  "url": "https://www.youtube.com/playlist?list=PLaBpAQ64SxcFgECO9Qp0qapAoFBwkq17q",
+  "checkedAt": "2026-10-24",
+  "items": [
+    {
+      "id": "y-ZKx0FG9Ro",
+      "title": "アルキメデスと王冠。アルキメデスは、王様の王冠が純金ではないことを、どうやって見破ったのか？知っているようで知らないお風呂の話を、分かりやすく解説します。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 644,
+      "restricted": false
+    },
+    {
+      "id": "3NTCWF4-e_A",
+      "title": "密度。密度とは何か？どうやって求めるのか？",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1420,
+      "restricted": false
+    }
+  ],
+  "collectionError": null,
+  "completeListing": true
+}

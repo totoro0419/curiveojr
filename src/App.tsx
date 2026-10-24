@@ -537,7 +537,8 @@ function WatchPage({
           </a>
         </div>
       </div>
-      <div className="watch-layout">
+      {v.notice&&<p className="notice" role="note">{v.notice}</p>}
+        <div className="watch-layout">
         <WatchPlaylist currentId={id} index={index} count={sequence.length} page={visiblePlaylist.page}>{playlist}</WatchPlaylist>
         <div className="watch-main">
           {learning.ready?<YouTubePlayer key={id} video={v} record={r} save={learning.save} initialSeek={seek} seekNonce={seekNonce} onProgress={progress=>setLiveProgress({videoId:id,...progress})}/>:<div className="player-placeholder">学習記録を読み込んでいます…</div>}

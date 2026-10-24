@@ -8,10 +8,13 @@ export interface LearningNode {
 export const learningNodes=new Map<string,LearningNode>();
 export const hierarchyRoots={} as Record<SubjectId,string>;
 const videoLeaves=new Map<string,string[]>();
+const videoRank=new Map(catalog.videos.map((video,index)=>[video.id,index]));
+const unitRank=new Map(catalog.units.map((unit,index)=>[unit.id,index]));
+const nodeVideoIds=new Map<string,Set<string>>();
 function add(id:string,subjectId:SubjectId,title:string,kind:LearningNode["kind"],parentId?:string):LearningNode{
  const result={id,subjectId,parentId,title,kind,description:title+"の授業を探す",children:[],videoIds:[],
  evidence:"公開動画の元単元名から作成した分類",sourceUnitIds:[]} as LearningNode;
- learningNodes.set(id,result);
+ learningNodes.set(id,result);nodeVideoIds.set(id,new Set());
  if(parentId)learningNodes.get(parentId)!.children.push(id);
  return result;
 }
@@ -33,15 +36,15 @@ for(const video of catalog.videos){
   const leaf=learningNodes.get("unit-"+unitId);if(!leaf)continue;
   const list=videoLeaves.get(video.id)||[];list.push(leaf.id);videoLeaves.set(video.id,list);
   for(let node:LearningNode|undefined=leaf;node;node=node.parentId?learningNodes.get(node.parentId):undefined){
-    if(!node.videoIds.includes(video.id))node.videoIds.push(video.id);
+    if(!nodeVideoIds.get(node.id)!.has(video.id)){nodeVideoIds.get(node.id)!.add(video.id);node.videoIds.push(video.id);}
     if(!node.sourceUnitIds.includes(unitId))node.sourceUnitIds.push(unitId);
   }
  }
 }
 for(const node of learningNodes.values()){
- node.videoIds.sort((a,b)=>catalog.videos.findIndex(v=>v.id===a)-catalog.videos.findIndex(v=>v.id===b));
+ node.videoIds.sort((a,b)=>videoRank.get(a)!-videoRank.get(b)!);
  node.children.sort((a,b)=>{const left=learningNodes.get(a)!,right=learningNodes.get(b)!;
-  const idx=(n:LearningNode)=>Math.min(...n.sourceUnitIds.map(id=>catalog.units.findIndex(u=>u.id===id)).filter(i=>i>=0));
+  const idx=(n:LearningNode)=>Math.min(...n.sourceUnitIds.map(id=>unitRank.get(id)??-1).filter(i=>i>=0));
   return idx(left)-idx(right);});
 }
 export function getNodePath(id:string){const arr:LearningNode[]=[];

@@ -33,6 +33,13 @@ export interface Unit {
   evidence?: string;
 }
 export interface Series {
+  sourceKind?: "playlist" | "official-index" | "editorial";
+  orderBasis?: "official-playlist" | "official-index" | "editorial";
+  listingComplete?: boolean;
+  sourceCount?: number;
+  excludedCount?: number;
+  duplicateCount?: number;
+  lessons?: {videoId:string;sourceOrder:number;unitId:string}[];
   subjectIds?: SubjectId[];
   notice?: string;
   id: string;
@@ -45,6 +52,12 @@ export interface Series {
   coverage: string;
 }
 export interface Video {
+  originalTitle?: string;
+  thumbnailUrl?: string;
+  notice?: string;
+  qualityReview?: "unverified" | "reviewed";
+  durationVerified?: boolean;
+  durationEvidence?: {sourceUrl:string;method:string;checkedAt:string};
   subjectIds?: SubjectId[];
   topic?: string;
   availability?: {publicMetadata:"confirmed"|"unverified";embedMetadata:"allowed"|"unavailable"|"unverified";playback:"unverified"|"confirmed";checkedAt:string};
@@ -66,7 +79,10 @@ export interface Video {
 }
 export interface LearningRoute {id:string;title:string;subjectIds:SubjectId[];description:string;steps:{seriesId:string;videoIds?:string[];label?:string}[];}
 export interface ChapterReference {videoId:string;chapterIndex:number;title:string;startSeconds:number;field:string|null;classificationStatus:"source-field"|"needs-review";evidence:string;}
+export interface CoverageItem { subjectId:SubjectId;field:string;topic:string;videoIds:string[];status:"listed"|"missing"; }
 export interface Catalog {
+  coverage?: CoverageItem[];
+  legacySeriesRedirects?: Record<string,string>;
   routes?: LearningRoute[];
   chapterIndex?: ChapterReference[];
   schemaVersion: 1;

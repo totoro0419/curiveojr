@@ -1,0 +1,52 @@
+{
+  "id": "PLaBpAQ64SxcE0I_9yvIJSPgKcRWYYclW0",
+  "title": "気体",
+  "channel": "lab",
+  "subject": "chemistry",
+  "url": "https://www.youtube.com/playlist?list=PLaBpAQ64SxcE0I_9yvIJSPgKcRWYYclW0",
+  "checkedAt": "2026-10-24",
+  "items": [
+    {
+      "id": "My1UfroPq-Q",
+      "title": "二酸化炭素。作り方と性質。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1312,
+      "restricted": false
+    },
+    {
+      "id": "vGzZqMkQ7EA",
+      "title": "アンモニア。アンモニア噴水実験をやります。アンモニアの性質がうまく使われています。教科書を読むより、本物を見た方が楽しい。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 775,
+      "restricted": false
+    },
+    {
+      "id": "9VktDlf4d-U",
+      "title": "水素。水素の性質。水素と金属。発生装置。グラフ問題。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1366,
+      "restricted": false
+    },
+    {
+      "id": "PuA_QV-aHcw",
+      "title": "5　化学の鶴亀算",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 855,
+      "restricted": false
+    },
+    {
+      "id": "7nPiAtNEl3Y",
+      "title": "燃焼応用問題解説（メタン燃焼・金属燃焼鶴亀算）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1953,
+      "restricted": false
+    }
+  ],
+  "collectionError": null,
+  "completeListing": true
+}

@@ -1,0 +1,52 @@
+{
+  "id": "PLaBpAQ64SxcH0HcROhJ_617yOKKhi6uZL",
+  "title": "音",
+  "channel": "lab",
+  "subject": "chemistry",
+  "url": "https://www.youtube.com/playlist?list=PLaBpAQ64SxcH0HcROhJ_617yOKKhi6uZL",
+  "checkedAt": "2026-10-24",
+  "items": [
+    {
+      "id": "3MJXfH5QxqE",
+      "title": "音。実験をしながら、音のポイントを解説します。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 2427,
+      "restricted": false
+    },
+    {
+      "id": "Fh6zBuOBZj0",
+      "title": "４音の計算（出す音・聞く音）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 524,
+      "restricted": false
+    },
+    {
+      "id": "YWaEZ2I8MDs",
+      "title": "走る車から球を投げると球は速くなる。なのに何故、走る車から音を出しても音は速くならないの？教科書では、ちゃんと説明されていないので、ここで説明しました。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 350,
+      "restricted": false
+    },
+    {
+      "id": "-4YZdyLws2Y",
+      "title": "音（基本）解説",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 877,
+      "restricted": false
+    },
+    {
+      "id": "-yTcGQkEwJg",
+      "title": "音（応用）解説",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 779,
+      "restricted": false
+    }
+  ],
+  "collectionError": null,
+  "completeListing": true
+}

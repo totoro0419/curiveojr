@@ -4,7 +4,8 @@ export interface CourseChapter {id:string;title:string;videoIds:string[];}
 export function courseOutline(series:Series):CourseChapter[]{
  const chunks:CourseChapter[]=[];
  for(const id of series.videoIds){
-  const unit=videoMap.get(id)?.unitIds.map(uid=>unitMap.get(uid)).find(Boolean);
+  const reference=series.lessons?.find(lesson=>lesson.videoId===id);
+  const unit=(reference?unitMap.get(reference.unitId):undefined)||videoMap.get(id)?.unitIds.map(uid=>unitMap.get(uid)).find(Boolean);
   const title=unit?.name||"授業一覧";
   const last=chunks[chunks.length-1];
   if(last?.title===title)last.videoIds.push(id);

@@ -1,0 +1,60 @@
+{
+  "id": "PLaBpAQ64SxcGhUl9KAogzOuAbqbHIaSHf",
+  "title": "空気と水",
+  "channel": "lab",
+  "subject": "chemistry",
+  "url": "https://www.youtube.com/playlist?list=PLaBpAQ64SxcGhUl9KAogzOuAbqbHIaSHf",
+  "checkedAt": "2026-10-24",
+  "items": [
+    {
+      "id": "5_vHXe1LTVo",
+      "title": "ヘロンの噴水　なぜ水が飛ぶのか？",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 600,
+      "restricted": false
+    },
+    {
+      "id": "x7bgZyIbwOQ",
+      "title": "ヘロンの噴水　前言撤回　修正版",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1033,
+      "restricted": false
+    },
+    {
+      "id": "zJ5oh7Ev_8U",
+      "title": "ヘロンの噴水①　噴水になる理由",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 355,
+      "restricted": false
+    },
+    {
+      "id": "_VAiAO91sUc",
+      "title": "ヘロンの噴水２　噴水を高くする方法",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 998,
+      "restricted": false
+    },
+    {
+      "id": "1QR952oBzgQ",
+      "title": "ヘロンの噴水の実験セットの配置",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 220,
+      "restricted": false
+    },
+    {
+      "id": "LFAKIgLCU8Y",
+      "title": "灯油ポンプのしくみ　・なぜ灯油は一方方向に移動するのか？・移動が始まると、勝手に移動が続くのはなぜか？ポンプの上のねじは、何のためについているのか？管の先が斜めになっているのはなぜか？",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 753,
+      "restricted": false
+    }
+  ],
+  "collectionError": null,
+  "completeListing": true
+}

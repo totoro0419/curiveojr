@@ -1,0 +1,52 @@
+{
+  "id": "PLaBpAQ64SxcFukGrNkzt6bScnNZNu9Y8a",
+  "title": "熱",
+  "channel": "lab",
+  "subject": "chemistry",
+  "url": "https://www.youtube.com/playlist?list=PLaBpAQ64SxcFukGrNkzt6bScnNZNu9Y8a",
+  "checkedAt": "2026-10-24",
+  "items": [
+    {
+      "id": "6IilAbqPGl4",
+      "title": "熱の伝わり方（伝導・対流・放射）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1454,
+      "restricted": false
+    },
+    {
+      "id": "eVj6GnfDiiY",
+      "title": "熱の伝わり方",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1148,
+      "restricted": false
+    },
+    {
+      "id": "l5PXyLC5xUg",
+      "title": "塩はどうやって作るのか？　私たちがふだん使っている食塩は、イオン交換膜法と真空式蒸発缶で作っています。具体的にどういうものか、分かりやすく説明します。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 601,
+      "restricted": false
+    },
+    {
+      "id": "cgYLhR01w2k",
+      "title": "電熱線の発熱",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 581,
+      "restricted": false
+    },
+    {
+      "id": "X7X1MwZmAxs",
+      "title": "珈琲サイフォン　なぜ重力に逆らって湯が上がるのか？",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 224,
+      "restricted": false
+    }
+  ],
+  "collectionError": null,
+  "completeListing": true
+}

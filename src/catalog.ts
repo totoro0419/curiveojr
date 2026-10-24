@@ -1,9 +1,15 @@
-import raw from "./data/catalog.json";
+import packed from "./data/catalog-runtime.json";
 import type { Catalog, Video, LearningRecord, Series, SubjectId } from "./types";
-export const catalog = raw as Catalog;
+// The full source catalog retains evidence; the app loads a compact, lossless learning index.
+const raw=packed as unknown as {subjects:Catalog['subjects'];channels:Catalog['channels'];units:Catalog['units'];series:(Omit<Series,'lessons'>&{lessons?:[number,number,number][]})[];videos:[string,string,number,number,string,number[],number[],number,Video['role'],number|null,boolean,string|null][]}&Omit<Catalog,'series'|'videos'>;
+export const catalog:Catalog={...raw,
+ series:raw.series.map(s=>({...s,lessons:s.lessons?.map(([index,sourceOrder,unitIndex])=>({videoId:s.videoIds[index],sourceOrder,unitId:raw.units[unitIndex].id}))})),
+ videos:raw.videos.map(([id,title,channel,subject,level,units,series,order,role,durationSeconds,durationVerified,notice])=>({id,title,channelId:raw.channels[channel].id,subjectId:raw.subjects[subject].id,level,unitIds:units.map(i=>raw.units[i].id),seriesIds:series.map(i=>raw.series[i].id),order,role,durationSeconds,durationVerified,notice:notice||undefined,sourceUrl:'https://www.youtube.com/watch?v='+id,verification:'verified',curriculum:'unverified',classificationEvidence:'公式出典は講座の収録範囲を参照'}))
+};
 export const videoMap = new Map(catalog.videos.map((v) => [v.id, v]));
 export const unitMap = new Map(catalog.units.map((u) => [u.id, u]));
 export const seriesMap = new Map(catalog.series.map((s) => [s.id, s]));
+for(const [legacy,target] of Object.entries(catalog.legacySeriesRedirects||{})){const series=seriesMap.get(target);if(series)seriesMap.set(legacy,series);}
 export const channelMap = new Map(catalog.channels.map((c) => [c.id, c]));
 export const subjectMap = new Map(catalog.subjects.map((s) => [s.id, s]));
 export const videoSubjects=(video:Video)=>video.subjectIds||[video.subjectId];

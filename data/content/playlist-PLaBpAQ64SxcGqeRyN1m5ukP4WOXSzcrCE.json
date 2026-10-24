@@ -1,0 +1,292 @@
+{
+  "id": "PLaBpAQ64SxcGqeRyN1m5ukP4WOXSzcrCE",
+  "title": "電流",
+  "channel": "lab",
+  "subject": "chemistry",
+  "url": "https://www.youtube.com/playlist?list=PLaBpAQ64SxcGqeRyN1m5ukP4WOXSzcrCE",
+  "checkedAt": "2026-10-24",
+  "items": [
+    {
+      "id": "RANNxbLIi5A",
+      "title": "電流計の使い方。実際の電流計を使って、つなぎ方、目盛りの読み方など説明します。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 591,
+      "restricted": false
+    },
+    {
+      "id": "5YREd64ENmo",
+      "title": "電磁石は、どこで使われているか",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 548,
+      "restricted": false
+    },
+    {
+      "id": "C9KzG5b665M",
+      "title": "発電とコンデンサー。教科書を見てもわかりにくいところを、実際に、実験しています。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1749,
+      "restricted": false
+    },
+    {
+      "id": "U2rUI5oOo5c",
+      "title": "豆電球の複雑な回路の読み取りのコツ。このパターンで、全部解ける。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1316,
+      "restricted": false
+    },
+    {
+      "id": "azAFAcSbWHo",
+      "title": "よくある質問　豆電球　直列と並列の混合回路。豆電球の配線で、直列と並列の混合回路があります。回路に流れる電流を、抵抗の考え方を使って、数値で表す方法を説明します。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 945,
+      "restricted": false
+    },
+    {
+      "id": "7ZVdxd9PjMg",
+      "title": "電熱線(電流と発熱）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1989,
+      "restricted": false
+    },
+    {
+      "id": "VkjxHPgDr1o",
+      "title": "電熱線(電流と発熱）の問題解説",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 2842,
+      "restricted": false
+    },
+    {
+      "id": "xQUZYq9hBog",
+      "title": "豆電球（階段スイッチ）。階段のスイッチは、1階でも2階でも、つけたり消したりできます。配線はどうなっているの？中学入試必須。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 230,
+      "restricted": false
+    },
+    {
+      "id": "NdZ-eeJZU50",
+      "title": "豆電球（ブラックボックス）。みんな大嫌いなブラックボックス。この動画を見れば、「なんだ！簡単だ！」となります。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 894,
+      "restricted": false
+    },
+    {
+      "id": "epfecOsqABk",
+      "title": "豆電球　明るさと数値化。中学受験に出題される豆電球を、わかりやすく説明した動画です。回路を流れる電流を、１や２や0.5などの数値を使って表す方法も説明しています。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 873,
+      "restricted": false
+    },
+    {
+      "id": "YbDZo4SWlOc",
+      "title": "乾電池の並列つなぎ。電池を得意にするか否かは、乾電池の並列つなぎが見分けられるかにかかってきます。乾電池の並列つなぎとは、一言でいえば何か。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 436,
+      "restricted": false
+    },
+    {
+      "id": "Iu87Ur0cYP4",
+      "title": "豆電球のつくり。ソケットのない豆電球は、どうすればつくの？実験をしながら、わかりやすく解説します。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 556,
+      "restricted": false
+    },
+    {
+      "id": "2ZEr0rsDJNI",
+      "title": "LED（発光ダイオード）。LEDは豆電球とどこがちがうの？実験を交えて説明しました。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1179,
+      "restricted": false
+    },
+    {
+      "id": "lNQGLZGpAQg",
+      "title": "豆電球①：電流を数字で表す（豆電球２個まで）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1436,
+      "restricted": false
+    },
+    {
+      "id": "MgP4hvb5_Ws",
+      "title": "豆電球②電流計（解説）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 551,
+      "restricted": false
+    },
+    {
+      "id": "tjQ824kA3vM",
+      "title": "豆電球③豆電球３個以上（解説）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1473,
+      "restricted": false
+    },
+    {
+      "id": "k_ZksSvpQeU",
+      "title": "豆電球④スイッチ・配線問題（解説）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1240,
+      "restricted": false
+    },
+    {
+      "id": "KHzi-VpPdfI",
+      "title": "電磁石①導線の周りの磁界・コイルの磁界（解説）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1873,
+      "restricted": false
+    },
+    {
+      "id": "vY3e-HoxzH8",
+      "title": "電磁石②モーター（２極・３極・コイル）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1104,
+      "restricted": false
+    },
+    {
+      "id": "4Lkdb_5PM6c",
+      "title": "電磁石③ブザー・電流計・リニアモーターカー",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 825,
+      "restricted": false
+    },
+    {
+      "id": "EX9GVeP_Qsk",
+      "title": "電熱線と電流(応用）解説",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 963,
+      "restricted": false
+    },
+    {
+      "id": "LPDn-FPWb3U",
+      "title": "電熱線と電流（基本）解説",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1465,
+      "restricted": false
+    },
+    {
+      "id": "J-k65oOTB-U",
+      "title": "電熱線と発熱（基本）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1764,
+      "restricted": false
+    },
+    {
+      "id": "D037XBTe3s8",
+      "title": "電熱線と発熱（応用）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1568,
+      "restricted": false
+    },
+    {
+      "id": "6bD-CvS24qo",
+      "title": "この電球はつくの？中学入試で時々登場。模範解答が問題集で違い、質問多発の問題に決着をつけます。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 661,
+      "restricted": false
+    },
+    {
+      "id": "vwu946MwyNk",
+      "title": "抵抗の並列つなぎは、なぜ逆数の和を使うのか　1/R=1/R1+1/R2というあの公式は、理由は説明されずに、「暗記しなさい」と言われます。今回は、小学生でもわかるように、この公式の意味を説明します。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 718,
+      "restricted": false
+    },
+    {
+      "id": "O-j6SwLFcQc",
+      "title": "光電池と乾電池のちがい 　乾電池は、並列つなぎにしても豆電球は明るくならないのに、光電池は、並列つなぎでも、豆電球が明るくなります。どうして？これは、乾電池と光電池の違いを考えるとわかります。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 940,
+      "restricted": false
+    },
+    {
+      "id": "5GBAj4qV_LQ",
+      "title": "自由研究　身近なもので、良く回るモーターを作ろう！特別な道具がなくても、「家にあるものを工夫すれば何とかなる」ことを伝えたい。自分でゼロから作ることで、モーターの工夫がとてもよくわかる。",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1586,
+      "restricted": false
+    },
+    {
+      "id": "a1kS2rNXRTg",
+      "title": "私たちの生活と電気（６年）　教科書型問題",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1181,
+      "restricted": false
+    },
+    {
+      "id": "sfVBAzTJgnk",
+      "title": "電流と磁界①導線のまわりの磁界・電磁石・コイルモーター",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 2156,
+      "restricted": false
+    },
+    {
+      "id": "bGcPfR7JbOQ",
+      "title": "電熱線と電流（電流と抵抗）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1077,
+      "restricted": false
+    },
+    {
+      "id": "lcAwlwJlIH0",
+      "title": "電熱線の発熱①電圧が同じ",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 956,
+      "restricted": false
+    },
+    {
+      "id": "OA3YFTEzH2w",
+      "title": "電熱線と発熱①問題解説",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1610,
+      "restricted": false
+    },
+    {
+      "id": "5Ossvk5kbXA",
+      "title": "電熱線の発熱②（電圧がちがう）チェックテストの解説",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 1614,
+      "restricted": false
+    },
+    {
+      "id": "nvLNktGVJ-0",
+      "title": "電熱線の発熱②電圧がちがう（完結）",
+      "uploader": "観るだけで賢くなる理科の話",
+      "channelId": "UC5-lOB3_zMkjr2ji8sYBfvg",
+      "durationSeconds": 872,
+      "restricted": false
+    }
+  ],
+  "collectionError": null,
+  "completeListing": true
+}
