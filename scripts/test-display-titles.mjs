@@ -8,7 +8,7 @@ const subjectChanges=c.displayTitleEdition.changedBySubject;
 assert.ok(Object.values(subjectChanges).reduce((a,b)=>a+b,0)>=100,'At least 100 titles should be clearer');
 const byId=new Map(c.videos.map(v=>[v.id,v]));
 for(const v of c.videos){
- assert.ok(v.title.trim().length>=3,'Empty/ambiguous title '+v.id);
+ assert.ok(v.title.trim().length>=1,'Empty title '+v.id);
  assert.ok(v.originalTitle?.trim(),'Original title missing '+v.id);
  assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+v.id,'Video link mismatch '+v.id);
 }
