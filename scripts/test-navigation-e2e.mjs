@@ -33,7 +33,7 @@ try{
   await page.goto(ORIGIN+'#/subject/'+id,{waitUntil:'domcontentloaded'});
   await page.locator('main h1').getByText(label,{exact:true}).waitFor({timeout:15000});
   await noMissing(page);
-  if(id==='japanese-history')await page.getByRole('tab',{name:'チャンネル・講座'}).click();
+  await page.getByRole('tab',{name:'チャンネル・講座'}).click();
   await page.locator('.course-groups .disclosure-trigger').first().waitFor({timeout:15000});
   let first=page.locator('.course-groups .disclosure').first();
   let trigger=first.locator('.disclosure-trigger').first();
@@ -59,7 +59,7 @@ try{
  await page.locator('a.subject-tile').first().click();
  await waitRoute(page,/^#\/subject\//);
  check(!page.url().includes('undefined'),'Discover → subject route');
- await page.getByRole('tab',{name:'単元から探す'}).click();
+ await page.getByRole('tab',{name:'分野・単元から探す'}).click();
  const category=page.locator('.hierarchy-card a, a.hierarchy-card').first();
  await category.waitFor({timeout:15000});
  const categoryHref=await category.getAttribute('href');
@@ -68,6 +68,18 @@ try{
  await waitRoute(page,/^#\/category\//);
  await noMissing(page);
  check(await page.locator('main .hierarchy-grid, main .course-choices, main .selected-course').count()>0,'Subject → category route');
+ await page.goto(ORIGIN+'#/subject/japanese-history',{waitUntil:'domcontentloaded'});
+ await page.locator('a[href="#/history"]').first().click();
+ await waitRoute(page,/^#\/history$/);
+ await page.locator('a[href="#/history/core"]').first().click();
+ await waitRoute(page,/^#\/history\/core$/);
+ check(await page.locator('a[href^="#/history/era/"]').count()===11,'History: eleven named eras');
+ await page.locator('a[href="#/history/era/ancient"]').click();
+ await waitRoute(page,/^#\/history\/era\/ancient$/);
+ check(await page.locator('.video-row').count()===3,'History: three foundational ancient lessons, no unrelated videos');
+ await page.locator('.video-row').first().click();
+ await waitRoute(page,/^#\/watch\//);
+ check(true,'History: subject → all lessons → era → video');
  await page.goto(ORIGIN+'#/category/learn-mathematics-legacy',{waitUntil:'domcontentloaded'});
  await waitRoute(page,/^#\/subject\/mathematics/);
  await noMissing(page);

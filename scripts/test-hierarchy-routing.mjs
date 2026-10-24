@@ -16,6 +16,10 @@ assert.equal(recoveryHrefForMissingNode("unrecognized-category"),"#/discover");
 for(const node of learningNodes.values()){
  if(node.kind==="subject")continue;
  const href=nodeHref(node);
+ if(node.id==='field-japanese-history:歴史'){
+  assert.equal(href,'#/history');
+  continue;
+ }
  assert.ok(href.startsWith("#/category/"));
  const id=decodeURIComponent(href.slice("#/category/".length));
  assert.equal(id,node.id,"Category deep link must roundtrip");
