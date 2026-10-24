@@ -1,0 +1,23 @@
+name: Curiveo Jr. mobile navigation E2E
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  navigation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Install browser driver
+        run: npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.56.1
+      - run: npm run build
+      - name: Exercise real app navigation on mobile Chrome
+        run: node scripts/test-navigation-e2e.mjs
