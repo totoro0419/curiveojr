@@ -35,5 +35,6 @@ jobs:
           git add src/data/catalog.json src/data/catalog-runtime.json docs/content/NON_LESSON_REMOVAL.json docs/content/NON_LESSON_REMOVAL.md docs/content/TITLE_EDIT_REPORT.md docs/content/title-edit-examples.json data/content/import-audit.json
           if ! git diff --cached --quiet; then
             git commit -m "Remove verified non-lesson promotions from catalog and all playlists"
+            git pull --rebase origin main
             git push
           fi
