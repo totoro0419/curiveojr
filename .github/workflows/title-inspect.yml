@@ -1,0 +1,19 @@
+name: Inspect display title patterns
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/title-inspect.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Sample titles
+        run: node scripts/audit-display-titles.mjs
