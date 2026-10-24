@@ -19,10 +19,11 @@
     "durations:complete": "python3 scripts/collect-video-durations.py --require-complete",
     "test:jr": "node scripts/validate-catalog.mjs",
     "catalog:runtime": "node scripts/build-catalog-runtime.mjs",
-    "content:integrate": "python3 scripts/content/integrate.py && node scripts/standardize-titles.mjs && node scripts/build-catalog-runtime.mjs",
+    "content:integrate": "python3 scripts/content/integrate.py && node scripts/standardize-titles.mjs && node scripts/polish-titles.mjs && node scripts/prune-nonlessons.mjs && node scripts/build-catalog-runtime.mjs",
     "content:validate": "node scripts/validate-content.mjs",
-    "test:content": "node scripts/validate-content.mjs && node scripts/test-watch-context.mjs && node scripts/test-watch-layout.mjs && node scripts/test-watch-playlist-duration.mjs && node scripts/test-resume-selection.mjs && node scripts/test-playlist-readable-rows.mjs && node scripts/test-app-notifications.mjs && node scripts/test-hierarchy-routing.mjs && node scripts/test-history-study.mjs && node scripts/test-display-titles.mjs && node scripts/test-navigation-bookmarks.mjs",
-    "content:titles": "node scripts/standardize-titles.mjs && node scripts/build-catalog-runtime.mjs"
+    "test:content": "node scripts/validate-content.mjs && node scripts/test-watch-context.mjs && node scripts/test-watch-layout.mjs && node scripts/test-watch-playlist-duration.mjs && node scripts/test-resume-selection.mjs && node scripts/test-playlist-readable-rows.mjs && node scripts/test-app-notifications.mjs && node scripts/test-hierarchy-routing.mjs && node scripts/test-history-study.mjs && node scripts/test-display-titles.mjs && node scripts/test-navigation-bookmarks.mjs && node scripts/test-nonlesson-pruning.mjs",
+    "content:titles": "node scripts/standardize-titles.mjs && node scripts/build-catalog-runtime.mjs",
+    "content:prune": "node scripts/prune-nonlessons.mjs && node scripts/build-catalog-runtime.mjs"
   },
   "dependencies": {
     "firebase": "^12.4.0",
