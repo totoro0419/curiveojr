@@ -61,6 +61,9 @@ export function transitionSurface(update:()=>void, direction:'forward'|'back'|'r
  // visual cancellation or an intervening tab press cannot discard navigation.
  const transition=document.startViewTransition(()=>flushSync(update));
  activeTransition=transition;
+ // A new navigation can skip an in-flight View Transition. Chromium rejects
+ // ready separately from finished, so consume the expected cancellation here.
+ void transition.ready.catch(()=>{});
  void transition.finished.catch(()=>{}).finally(()=>{
   if(version!==transitionVersion)return;
   activeTransition=undefined;selectedSubject=undefined;
