@@ -6,6 +6,7 @@ import {saveWatchList} from '../lib/watch-list-context';
 import {listKey} from '../lib/list-key';
 import {durationSummary} from '../lib/duration';
 import {ProgressBar,VideoList} from '../components/catalog-ui';
+import {BookmarkToggle} from '../components/NavigationBookmarks';
 import type {Learning} from '../components/catalog-ui';
 
 const scope='saved:'+listKey(historyCoreVideos.map(v=>v.id));
@@ -32,6 +33,7 @@ export default function HistoryStudyPage({section,eraId,learning}:{
  return <>
   {breadcrumb}
   <a className="back-link" href={back}><ArrowLeft size={17}/>戻る</a>
+  <BookmarkToggle kind="history" id={section==='era'&&era?'era/'+era.id:section==='core'?'core':section==='supplement'?'supplement':'index'}/>
   {section==='era'?era?<>
    <header className="page-heading"><p className="eyebrow">歴史の基本授業</p><h1>{era.title}</h1>
     <p>第{era.first}〜{era.last}講 · {era.videos.length}授業。時代順に学べます。</p></header>

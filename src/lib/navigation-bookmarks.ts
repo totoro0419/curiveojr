@@ -1,5 +1,6 @@
 import {useSyncExternalStore} from 'react';
 import {channelMap,routeMap,seriesMap,subjectMap,unitMap} from '../catalog';
+import type {SubjectId} from '../types';
 import {learningNodes, nodeHref} from '../navigation/hierarchy';
 import {historyEras} from '../navigation/history-study';
 
@@ -51,7 +52,7 @@ export function setNavigationBookmarked(kind:BookmarkKind,id:string,want:boolean
 }
 export function resolveNavigationBookmark(bookmark:NavigationBookmark){
  const {kind,id}=bookmark;
- if(kind==='subject'){const s=subjectMap.get(id as keyof typeof subjectMap extends never?never:any);return s?{title:s.name,href:'#/subject/'+encodeURIComponent(id),label:'教科'}:null;}
+ if(kind==='subject'){const s=subjectMap.get(id as SubjectId);return s?{title:s.name,href:'#/subject/'+encodeURIComponent(id),label:'教科'}:null;}
  if(kind==='category'){const node=learningNodes.get(id);return node?{title:node.title,href:nodeHref(node),label:'分野・単元'}:null;}
  if(kind==='course'){const s=seriesMap.get(id);return s?{title:s.title,href:'#/course/'+encodeURIComponent(id),label:'講座・プレイリスト'}:null;}
  if(kind==='channel'){const c=channelMap.get(id);return c?{title:c.name,href:'#/channel/'+encodeURIComponent(id),label:'チャンネル'}:null;}

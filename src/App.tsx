@@ -69,6 +69,7 @@ import { WatchPlaylist } from "./components/WatchPlaylist";
 import { VideoActions } from "./components/VideoActions";
 import { collectAppNotices, type AppNotice } from "./lib/app-notifications";
 import { selectResumeRecommendation } from "./lib/resume-selection";
+import { HomeBookmarks } from "./components/NavigationBookmarks";
 const LazyHierarchyPage = lazy(preloadHierarchy);
 const LazyHistoryStudyPage = lazy(() => import("./pages/HistoryStudyPage"));
 const LazyLearningRoutePage=lazy(()=>preloadHierarchy().then(module=>({default:module.LearningRoutePage})));
@@ -142,6 +143,7 @@ function HomePage({ learning }: { learning: Learning }) {
         </div>
       )}
       <SearchBox onSearch={(q) => go(`/discover?q=${encodeURIComponent(q)}`)} />
+      <HomeBookmarks/>
       <section className="section">
         <SectionHeading title={v ? "教科から学ぶ" : "何を学びますか？"} />
         <SubjectTiles learning={learning} />

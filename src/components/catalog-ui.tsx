@@ -9,6 +9,7 @@ import { videoDuration, durationTime, durationSummary } from '../lib/duration';
 import { sortCourses } from '../navigation/curriculum-order';
 import { saveWatchList } from '../lib/watch-list-context';
 import { VideoActions } from './VideoActions';
+import { BookmarkToggle } from './NavigationBookmarks';
 export type Learning = ReturnType<typeof useLearning>;
 export const icons: Record<string, LucideIcon> = {
   Sigma,
@@ -261,7 +262,7 @@ export function CourseList({
         );
         const p = progress(list, learning.records);
         return (
-          <a href={`#/course/${s.id}${subjectId&&subjectId!==s.subjectId?`?subject=${subjectId}`:""}`} className="course-row" key={s.id}>
+          <div className="bookmark-course-row" key={s.id}><a href={`#/course/${s.id}${subjectId&&subjectId!==s.subjectId?`?subject=${subjectId}`:""}`} className="course-row">
             <span className="course-mark">
               <BookOpen size={23} />
             </span>
@@ -278,7 +279,7 @@ export function CourseList({
               </p>
             </div>
             <ChevronRight size={19} />
-          </a>
+          </a><BookmarkToggle kind="course" id={s.id}/></div>
         );
       })}
     </div>
