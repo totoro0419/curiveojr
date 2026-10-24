@@ -24,6 +24,8 @@ jobs:
         run: |
           node --check scripts/standardize-titles.mjs
           node scripts/standardize-titles.mjs
+          node --check scripts/polish-titles.mjs
+          node scripts/polish-titles.mjs
           node scripts/build-catalog-runtime.mjs
       - name: Validate catalog, chronology and unchanged reference structure
         run: |
