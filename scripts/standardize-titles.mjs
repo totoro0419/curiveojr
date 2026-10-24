@@ -15,9 +15,9 @@ function pretty(v){
  // emoji. Display these as consistent, distinguishable episode headings.
  if(v.subjectId==='japanese'&&v.channelId==='sakurara'&&/国語基礎講座/.test(title)){
   const plain=title.replace(/[\uFE0F\u20E3]/g,'');
-  const episode=plain.match(/^(?:(?:【)?国語基礎講座(?:第)?(\d{1,3})回?】?|(?:\d{1,3})【?国語基礎講座】?)|(?:\d{1,3}))/);
+  const episode=plain.match(/^(?:【?国語基礎講座(?:第)?(\d{1,3})(?:回)?】?|(\d{1,3}))/);
   if(episode){
-   const digits=(episode[1]||episode[0].match(/\d{1,3}/)?.[0]||'');
+   const digits=episode[1]||episode[2]||'';
    const num=Number(digits);
    if(num>=1&&num<=150){
     let rest=plain.slice(episode[0].length).replace(/【?国語基礎講座】?/g,'').trim();
