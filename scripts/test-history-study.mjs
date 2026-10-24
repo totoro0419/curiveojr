@@ -9,7 +9,7 @@ assert.equal(new Set(historyCoreVideos.map(v=>v.id)).size,38);
 assert.ok(historyCoreVideos.every((v,i)=>v.id===videoMap.get(v.id)?.id&&numberedHistoryLecture(v.title)===i+1));
 assert.equal(historyEras.length,11);
 assert.deepEqual(historyEras.flatMap(e=>e.videos.map(v=>v.id)),historyCoreVideos.map(v=>v.id));
-for(const era of historyEras)assert.ok(era.videos.length>0&&era.videos.every(v=>/^【歴史】/.test(v.title)));
+for(const era of historyEras)assert.ok(era.videos.length>0&&era.videos.every(v=>numberedHistoryLecture(v.title)!==null));
 const core=new Set(historyCoreVideos.map(v=>v.id));
 assert.ok(historySupplementVideos.every(v=>!core.has(v.id)));
 assert.ok(historySupplementVideos.every(v=>!(/勉強法|緊急動画|告知|購入|お知らせ/.test(v.title))));

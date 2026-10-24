@@ -8,6 +8,8 @@ const sources=catalog.series.filter(s=>s.subjectId==='japanese-history'&&s.chann
 // Numbered 【歴史】 lessons are the core. Notices, study advice,
 // compilations and advanced social studies are never core lectures.
 export function numberedHistoryLecture(title:string):number|null{
+ const edited=title.match(/^第(\d{1,2})講[｜\s]/u);
+ if(edited){const n=Number(edited[1]);return n>=1&&n<=38?n:null;}
  const found=title.match(/^\s*【歴史】\s*((?:[0-9][\uFE0F]?\u20E3)+)/u);
  if(!found)return null;
  const value=Number(found[1].replace(/[^0-9]/g,''));
