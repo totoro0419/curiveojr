@@ -17,5 +17,6 @@ const lectureSeries=c.series.filter(s=>s.subjectId==='japanese-history'&&/【歴
 const originals=lectureSeries.flatMap(s=>s.videoIds).map(id=>byId.get(id));
 const edited=originals.filter(v=>/^第\d{2}講｜/.test(v.title));
 assert.ok(edited.length>=38,'Numbered history lectures not improved');
-assert.equal(c.displayTitleEdition.changed,c.videos.filter(v=>v.title!==v.originalTitle).length >= 0 ? c.displayTitleEdition.changed : 0);
+assert.ok(c.displayTitleEdition.changed <= c.videos.length);
+assert.ok(c.videos.some(v=>v.title!==v.originalTitle),'Edited headings must differ from official titles');
 console.log('Display title integrity PASS: '+c.displayTitleEdition.changed+' titles edited');
